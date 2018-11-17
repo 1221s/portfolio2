@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>header</title>
-  </head>
-  <body>
+<head>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave|Questrial|Russo+One" rel="stylesheet">
 
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="utf-8">
+  <title>header</title>
+  <!-- REMEMBER TO INSERT META TAGS -->
+
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="script.jscript" defer></script>
+
+  </head>
+
+
+  <body>
+  <div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
+    <section id="mainWrapperHeader">
+            <div id="burger1" onclick="BurgerMenu()">
+                <div class="burgerLine"></div>
+                <div class="burgerLine"></div>
+                <div class="burgerLine"></div>
+            </div>
+
+            <div id="burger2" onclick="hideBurgerMenu()">
+                <div class="burgerLine"></div>
+                <div class="burgerLine"></div>
+                <div class="burgerLine"></div>
+            </div>
+
+        <div id="burgerMenu">
+            <ul>
+              <li> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
+              <li> <a href="commisions.html"><h2>Commisions</h2></a> </li>
+              <li> <a href="about.html"><h2>About Me</h2></a> </li>
+            </ul>
+        </div>
+
+      <div id="logo">
+        <span class="headerText"><p>1221s</p><p>PORTFOLIO</p></span>
+      </div>
+
+            <div id="indexImageSlides">
+              <div class="imageSlide fade">
+                <img class=" image imageSliderImage" src="img/imageslider/swampland.jpg" alt="swampland">
+              </div>
+
+              <div class="imageSlide fade">
+                <img class=" image imageSliderImage" src="img/imageslider/mountainrange.jpg" alt="mountainrange">
+              </div>
+
+              <div class="imageSlide fade">
+                <img class=" image imageSliderImage" src="img/imageslider/pond.jpg" alt="pond">
+              </div>
+
+              <div class="imageSlide fade">
+                <img class=" image imageSliderImage" src="img/imageslider/river.jpg" alt="river">
+              </div>
+            </div>
+
+      </section>
   </body>
 </html>

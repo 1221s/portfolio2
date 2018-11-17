@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  color:white;
+  font-family:'Questrial', sans-serif;
+  color:#ffffff;
+  text-decoration:none;
+  list-style:none;
+  font-size:1.2em;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-family:'Russo One', sans-serif;
+  font-size:1.3em;
+  color:#f37b36;
+}
+h2 {
+  font-family:'Russo One', sans-serif;
+  font-size:1.3em;
+  color:#ffffff;
+}
+h3 {
+  font-family:'Knewave', sans-serif;
+  font-size:1.3em;
+  color:#558157;
+}
+
+
+#body {
+  position:absolute;
+  background-color:#515151;
+  width:100%;
+  height:100%;
+  margin:0;
+}
+
+/* GENERAL CSS */
+
+.image {
+  width:100%;
+  max-height:100%;
+  border-radius:none;
+}
+
+/* HEADER */
+
+#mainWrapperHeader {
+  position:relative;
+  height:490px;
+  width:100%;
+  background-color:#404040;
+  padding:0;
+  margin:0;
+}
+
+#mainWrapperHeaderSmall {
+  position:fixed;
+  height:200px;
+  width:100%;
+  background-color:#404040;
+  padding:0;
+  margin:0;
+  z-index:10;
+}
+
+#indexImageSlide {
+  position:absolute;
+  height:100%;
+  width:auto;
+  margin:0;
+}
+
+/* burger menu*/
+#burger1 {
+  display:block;
+  position:absolute;
+  left:2%;
+  top:30px;
+  z-index:16;
+}
+
+#burger2 {
+  display:none;
+  position:absolute;
+  left:2%;
+  top:30px;
+  z-index:16;
+}
+
+.burgerLine {
+  width:130px;
+  height:20px;
+  background-color:white;
+  margin:15px 0;
+  border-radius:10px;
+}
+
+#burgerMenu {
+  display:none;
+  position:absolute;
+  width:80vw;
+  background-color:#cecccc;
+  min-height:700px;
+  z-index:15;
+  padding-top:200px;
+  padding-bottom:100px;
+  border-radius: 0 0 20px 0;
+}
+
+#burgerMenu li {
+  width:100%;
+  padding:30px;
+  margin-bottom:20px;
+
+}
+
+
+/* black overlay when burger menu is opened */
+#mainOverlayBurger {
+  display:block;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+  top:0
+  padding:0;
+  margin:0;
+  background-color:rgba(64, 64, 64, 0.8);
+  z-index:-5;
+  opacity:0;
+  transition-duration:1s;
+  transition-delay:0.1s;
+}
+
+
+#logo {
+  width:90vw;
+  position:absolute;
+  top:200px;
+  text-align:center;
+  left:5%;
+  z-index:1;
+}
+
+#logo p {
+  font-family:'Audiowide', sans-serif;
+  font-size:2em;
+  color:#ffffff;
+}
+
+#logo1 {
+  width:90vw;
+  position:absolute;
+  top:60px;
+  text-align:center;
+  left:5%;
+  z-index:1;
+}
+
+#logo1 p {
+  font-family:'Audiowide', sans-serif;
+  font-size:1em;
+  color:#ffffff;
+}
+
+
+/* IMAGE SLIDESHOW */
+.mySlides {
+  display:none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* MAIN CONTENT INDEX MOB */
+
+#MainWrapper {
+  margin-bottom:500px;
+}
+
+/* INDEX BUTTONS */
+
+#indexButtons {
+  position:relative;
+  width:90%;
+  height:auto;
+  margin:auto;
+  margin-top:100px;
+  margin-bottom:100px;
+  text-align:center;
+}
+
+.indexButtonsListItem {
+  background-color:#f37b36;
+  padding:0.5em;
+  margin-bottom:25px;
+  border-radius:20px;
+  box-shadow:10px 10px 5px #404040;
+}
+
+/* PEEK-A-BOO INDEX */
+
+#peekaboo {
+  position:fixed;
+  right:0;
+  width:10vw;
+  background-color:#f37b36;
+  padding:25px;
+  border-radius: 20px 0 0 20px;
+  box-shadow:1px 20px 5px #404040;
+  z-index:2;
+  margin-top:70vh;
+  transition-duration:0.3s;
+}
+
+#peekabooIndex {
+  position:absolute;
+  top:0;
+}
+
+#peekabooText {
+  opacity:0;
+  position:absolute;
+  margin-top:25px;
+  margin-left:30px;
+  left:150px;
+  transition-duration:0.2s;
+}
+
+#peekabooCloseArrow {
+  position:absolute;
+  display:none;
+  font-size:4em;
+  top:0;
+}
+
+#peekabooInstagram, #peekabooTumblr{
+  width:50px;
+  height:auto;
+  float:right;
+  margin-bottom:15px;
+  clear:none;
+  transition-duration:0.3s;
+}
+
+#peekabooInstagramLink, #peekabooTumblrLink {
+  pointer-events:none;
+}
+
+/* Portfoliom Mobile CSS */
+
+#mainWrapperPortfolio {
+  width:90vw;
+  position:relative;
+  margin:auto;
+  margin-top:300px;
+  margin-bottom: 400px;
+  z-index:0;
+}
+
+#mainWrapperPortfolio p {
+  width:90%;
+  height:auto;
+}
+
+.imgBoxWrapper {
+  margin-bottom:300px;
+}
+
+.portfolioImgMob {
+  width:100%;
+  height:auto;
+}
+
+.tumblrBtn {
+  float:right;
+  width:50%;
+  margin-top:25px;
+  padding:20px;
+  background-color:#f37b36;
+  border-radius:15px;
+}
