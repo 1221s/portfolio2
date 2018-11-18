@@ -73,7 +73,6 @@ function showSlides() {
 }
 
 // horizontal scroller
-document.getElementById('rightArrowCommisionGallery').addEventListener("click", function(){jumpScroll()}, true);
 
 function jumpScroll() {
    document.getElementById('commisionGalleryWrapperBig').scrollBy(600,0);
@@ -81,12 +80,4 @@ function jumpScroll() {
 
 function jumpScrollBack() {
    document.getElementById('commisionGalleryWrapperBig').scrollBy(-1900,0);
-}
-
-function jumpScroll1() {
-   document.getElementById('commisionGalleryWrapperBig1').scrollBy(600,0);
-}
-
-function jumpScrollBack1() {
-   document.getElementById('commisionGalleryWrapperBig1').scrollBy(-1900,0);
 }

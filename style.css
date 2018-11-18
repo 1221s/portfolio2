@@ -322,7 +322,7 @@ h3 {
   height:1100px;
 }
 
-#bigSliderWrapper {
+.bigSliderWrapper {
   position:absolute;
 }
 
@@ -334,43 +334,29 @@ h3 {
   overflow-x:scroll;
 }
 
-#imageGallerySliderWrapper {
+.imageGallerySliderWrapper {
   position:relative;
   float:left;
+  height:100%;
   margin-left:5%;
   margin-bottom:50px;
-  width:100vw;
-  background-color:black;
+  min-width:200%;
+  max-width:1000%;
   margin-right:60px;
+  clear:none;
 }
 
 .myGallerySlides {
-  position:absolute;
-  display:inline-block;
+  display:block;
   max-width:900px;
-  width:70%;
+  min-width:150px;
   height:auto;
   float:left;
   padding-right:60px;
+  clear:none;
 }
 
-#bidirectionalImage1{
-  left:0;
-  opacity:1;
-}
-#bidirectionalImage2 {
-  left: 70%;
-}
-#bidirectionalImage3 {
-  left: 140%;
-  display:block;
-}
-#bidirectionalImage4 {
-  left:210%;
-  display:block;
-}
-
-#leftArrowCommisionGallery, #rightArrowCommisionGallery {
+.leftArrowCommisionGallery, .rightArrowCommisionGallery {
   position:absolute;
   display:block;
   clear:both;
@@ -380,11 +366,11 @@ h3 {
   z-index:6;
 }
 
-#leftArrowCommisionGallery i, #rightArrowCommisionGallery i {
+.leftArrowCommisionGallery i, .rightArrowCommisionGallery i {
   font-size:80px;
 }
 
-#rightArrowCommisionGallery {
+.rightArrowCommisionGallery {
   right:0;
 }
 .ItemOnCommisionsPage{
@@ -446,21 +432,19 @@ margin-left:5%;
 #aboutMeWrapper h1 {
   right:10;
   top:400px;
-  margin-bottom:60px;
+  margin-bottom:10px;
   text-align:center;
 }
 
 #selfie  {
-  position:absolute;
-  left:-100px;
-  width:130%;
+  width:100%;
+  margin-left:5%;
   margin-top:100px;
-  transform:rotate(90deg);
 }
 
  #aboutMeTextWrapper {
   position:relative;
-  margin-top:1100px;
+  margin-top:60px;
   width:90%;
   margin-left:5%;
 }
@@ -471,4 +455,7 @@ margin-left:5%;
 
 .proficienciesHeader {
   margin-left:5%;
+}
+.proficiencies {
+  width:400px;
 }
