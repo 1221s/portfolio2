@@ -75,9 +75,9 @@ function showSlides() {
 // horizontal scroller
 
 function jumpScroll() {
-   document.getElementById('commisionGalleryWrapperBig').scrollBy(600,0);
+   document.getElementById('commisionGalleryWrapperBig').scrollBy(910,0);
 }
 
 function jumpScrollBack() {
-   document.getElementById('commisionGalleryWrapperBig').scrollBy(-1900,0);
+   document.getElementById('commisionGalleryWrapperBig').scroll(0,0);
 }

@@ -319,7 +319,13 @@ h3 {
 
 .wrapper {
   position:relative;
-  height:1100px;
+  height:inherit;
+  margin-top:50px;
+  max-height:1400px;
+}
+
+.wrapperSmall {
+  max-height:800px;
 }
 
 .bigSliderWrapper {
@@ -327,27 +333,23 @@ h3 {
 }
 
 #commisionGalleryWrapperBig{
-  margin-top:50px;
-  position:relative;
   max-width:100vw;
-  height:1010px;
   overflow-x:scroll;
 }
 
 .imageGallerySliderWrapper {
   position:relative;
   float:left;
-  height:100%;
   margin-left:5%;
   margin-bottom:50px;
-  min-width:200%;
-  max-width:1000%;
+  max-width:600vw;
+  min-width:400vw;
   margin-right:60px;
   clear:none;
 }
 
 .myGallerySlides {
-  display:block;
+  display:inline-block;
   max-width:900px;
   min-width:150px;
   height:auto;
@@ -355,6 +357,7 @@ h3 {
   padding-right:60px;
   clear:none;
 }
+
 
 .leftArrowCommisionGallery, .rightArrowCommisionGallery {
   position:absolute;
@@ -364,6 +367,10 @@ h3 {
   margin-left:10%;
   margin-right:10%;
   z-index:6;
+}
+
+.shortSliderArrowRight, .shortSliderArrowLeft {
+  top:85%;
 }
 
 .leftArrowCommisionGallery i, .rightArrowCommisionGallery i {
@@ -378,12 +385,11 @@ h3 {
 }
 
 #previousCommisionsHeader {
-  margin-top:350px;
+  margin-top:250px;
   margin-left:5%;
 }
 
 #commisionPrices {
-margin-top:40px;
 margin-left:5%;
 }
 
@@ -406,7 +412,7 @@ margin-left:5%;
 }
 
 #commisionButtons {
-  margin-bottom:300px;
+  margin-bottom:500px;
 }
 
 /* note Box on commisions page */
@@ -423,15 +429,21 @@ margin-left:5%;
 
 /* ABOUT ME CSSS */
 
-#aboutMeWrapper {
+#aboutMeBigWrapperBig {
   position:relative;
+  height:100%;
   margin-top:300px;
+  margin-bottom:1300px;
+}
+
+.aboutMeWrapper {
+  position:relative;
+  margin-top:20px;
   width:90%;
 }
 
-#aboutMeWrapper h1 {
+.aboutMeWrapper h1 {
   right:10;
-  top:400px;
   margin-bottom:10px;
   text-align:center;
 }
@@ -442,19 +454,21 @@ margin-left:5%;
   margin-top:100px;
 }
 
- #aboutMeTextWrapper {
+ .aboutMeTextWrapper {
   position:relative;
-  margin-top:60px;
+  margin-top:20px;
   width:90%;
   margin-left:5%;
 }
 
-#aboutMeTextWrapper p{
+.aboutMeTextWrapper p{
   margin-bottom:30px;
 }
 
 .proficienciesHeader {
   margin-left:5%;
+  margin-bottom:50px;
+  margin-top:100px;
 }
 .proficiencies {
   width:400px;
