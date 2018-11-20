@@ -10,7 +10,7 @@
     <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="styledesktop.css">
 
     <meta charset="utf-8">
-    <title>Index</title>
+    <title>Home</title>
     <!-- REMEMBER TO INSERT META TAGS -->
 
     <script
@@ -44,7 +44,8 @@
 
       <div id="burgerMenu">
           <ul>
-            <li> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
+            <li id="mobilePortfolioLink"> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
+            <li id="desktopHomeLink"> <a href="index.html"><h2>Home</h2></a> </li>
             <li> <a href="commisions.html"><h2>Commisions</h2></a> </li>
             <li> <a href="about.html"><h2>About Me</h2></a> </li>
             <li> <a href="blog.html"><h2>Process Blog</h2></a> </li>
@@ -75,6 +76,8 @@
 
     </section>
 </header>
+
+
 <div id="peekabooIndex">
   <div id="peekaboo" addEventListener="click">
       <span> <p id="peekabooCloseArrow" addEventListener="click">&#8250;</p> <h2 id="peekabooText">Follow Me:</h2></span>
@@ -99,7 +102,7 @@
 
   <section class="wrapper">
   <section class="bigSliderWrapper">
-  <div class="leftArrowCommisionGallery" onclick="jumpScrollBack()"> <i class="fa fa-angle-left"></i> </div>
+  <div class="leftArrowCommisionGallery" id="leftArrowCommisionGallery" onclick="jumpScrollBack()"> <i class="fa fa-angle-left"></i> </div>
   <div class="rightArrowCommisionGallery" onclick="jumpScroll()"> <i class="fa fa-angle-right"></i> </div>
 
   <h1 class="indexHeader">Original Art</h1>
@@ -160,81 +163,184 @@
           <p></p>
         </div>
 
-</div></section></section></section>
+</div>
+              </section> <!-- commision gallery wrapper big -->
+          </section> <!-- big slider wrapper -->
+</section> <!-- 'wrapper'-->
 
-<section class="wrapper">
-<section class="bigSliderWrapper">
-<div class="leftArrowCommisionGallery" onclick="jumpScrollBack2()"> <i class="fa fa-angle-left"></i> </div>
-<div class="rightArrowCommisionGallery" onclick="jumpScroll2()"> <i class="fa fa-angle-right"></i> </div>
+      <section class="wrapper">
+            <section class="bigSliderWrapper">
+            <div class="leftArrowCommisionGallery" id="leftArrowCommisionGallery2" onclick="jumpScrollBack2()"> <i class="fa fa-angle-left"></i> </div>
+            <div class="rightArrowCommisionGallery" onclick="jumpScroll2()"> <i class="fa fa-angle-right"></i> </div>
 
-<h1 class="indexHeader">Fan Art</h1>
-<section id="commisionGalleryWrapperBig2">
+            <h1 class="indexHeader">Fan Art</h1>
+                        <section id="commisionGalleryWrapperBig2">
 
-    <div class="imageGallerySliderWrapper">
+                            <div class="imageGallerySliderWrapper">
 
-      <div class="myGallerySlides" id="bidirectionalImage1">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland1, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage1">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland1, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage2">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland2, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage2">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland2, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage3">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland3, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage3">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland3, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
 
-      <div class="myGallerySlides" id="bidirectionalImage4">
-        <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
-        <p>Swampland4, 2017</p>
-        <p></p>
-      </div>
+                              <div class="myGallerySlides" id="bidirectionalImage4">
+                                <img src="img/swampland.jpg" alt="a image was supposed to be here" class="portfolioImg">
+                                <p>Swampland4, 2017</p>
+                                <p></p>
+                              </div>
 
-</div></section></section></section>
+                        </div>
+                      </section> <!-- commision gallery wrapper big -->
+            </section> <!-- big slider wrapper -->
+      </section> <!-- 'wrapper'-->
+
+<h1 class="indexHeader">Other Work</h1>
+      <section id="imageGridIndex">
+          <section id="indexGridBigWrapper">
+
+            <div class="columnIndex">
+
+              <div class="gridItem">
+                <a href="PAGE DETAILING THIS THING#.html">
+                <div class="gridItemOverlay">
+                  <div class="gridItemOverlayTextBox">
+                    <h1>Project title</h1>
+                    <p>Hello! I am a textbox</p>
+                    <p class="invisTextBox">I am the extra information!</p>
+                  </div>
+                </div>
+                </a>
+
+                <img src="img/grid/1.png" alt="this is an image in a grid" class="gridImg">
+
+              </div>
+
+
+              <div class="gridItem">
+                <a href="PAGE DETAILING THIS THING#.html">
+                <div class="gridItemOverlay">
+                  <div class="gridItemOverlayTextBox">
+                    <h1>Project title</h1>
+                    <p>Hello! I am a textbox</p>
+                    <p class="invisTextBox">I am the extra information!</p>
+                  </div>
+                </div>
+                </a>
+
+                <img src="img/grid/1.png" alt="this is an image in a grid" class="gridImg">
+
+              </div>
+
+            </div>
+
+            <div class="columnIndex">
+
+              <div class="gridItem">
+                <a href="PAGE DETAILING THIS THING#.html">
+                <div class="gridItemOverlay">
+                  <div class="gridItemOverlayTextBox">
+                    <h1>Project title</h1>
+                    <p>Hello! I am a textbox</p>
+                    <p class="invisTextBox">I am the extra information!</p>
+                  </div>
+                </div>
+                </a>
+
+                <img src="img/grid/1.png" alt="this is an image in a grid" class="gridImg">
+
+              </div>
+
+            </div>
+
+            <div class="columnIndex">
+
+              <div class="gridItem">
+                <a href="PAGE DETAILING THIS THING#.html">
+                <div class="gridItemOverlay">
+                  <div class="gridItemOverlayTextBox">
+                    <h1>Project title</h1>
+                    <p>Hello! I am a textbox</p>
+                    <p class="invisTextBox">I am the extra information!
+                                            and there's a lot more of me than you might've thought.
+                                          It's really kinda crazy how much you can fit in a box.</p>
+                  </div>
+                </div>
+                </a>
+
+                <img src="img/grid/1.png" alt="this is an image in a grid" class="gridImg">
+
+              </div>
+
+            </div>
+
+
+          </section> <!-- indexBigGridWrapper -->
+
+
+      </section> <!-- image Grid Index -->
+
+
+</section> <!-- desktop content wrapper-->
+
+</section> <!-- main content Wrapper -->
 
 
 
+<footer id="footer">
+
+<section id="footerContent">
+<h2>Thank you for taking a look at my portfolio!</h2>
+<p>I'm still new to webdevelopment so there might be a few bugs here and there. If you find any, could you shoot me a message on my email: <h2 class="smallestOfHeaders">Commish1221@gmail.com</h2> or on tumblr?</p>
+<p>I'd really appreciate it since I'd like to give visitors the best experience possible!</p>
 </section>
-
+<section id="footerIcons">
+  <h2>Follow me:</h2>
+  <a href="https://www.tumblr.com/dashboard/blog/1221sartblog"><img src="img/icons/tumblr.png" alt="the tumblr logo should've been here" class="footerIcon"></a>
+  <a href="https://www.instagram.com/1221sart/"><img src="img/icons/instagram.png" alt="the instagram logo should've been here" class="footerIcon"></a>
 </section>
-
-
-
-<footer id="footer"></footer>
+<div id="footerBackground"></div>
+</footer>
   </body>
 </html>

@@ -19,7 +19,6 @@ document.getElementById('peekaboo').addEventListener("click", function(){peekabo
 document.getElementById('peekabooCloseArrow').addEventListener("click", function(){peekabooClose()}, true);
 
 function peekabooOpen(){
-  if(window.innerWidth <= 600) {
 
     document.getElementById('peekaboo').style.width="80vw";
 
@@ -37,28 +36,8 @@ function peekabooOpen(){
 
     document.getElementById('peekabooText').style.opacity="1";
     document.getElementById('peekabooCloseArrow').style.display="block";
-  } else {
-    document.getElementById('peekaboo').style.width="50vw";
-
-    document.getElementById('peekabooInstagram').style.clear="none";
-    document.getElementById('peekabooTumblr').style.clear="none";
-
-    document.getElementById('peekabooInstagram').style.width="70px";
-    document.getElementById('peekabooTumblr').style.width="70px";
-
-    document.getElementById('peekabooInstagram').style.marginRight="30px";
-        document.getElementById('peekabooTumblr').style.marginRight="30px";
-
-    document.getElementById('peekabooInstagramLink').style.pointerEvents="auto";
-    document.getElementById('peekabooTumblrLink').style.pointerEvents="auto";
-
-
-    document.getElementById('peekabooText').style.transitionDelay="0.4s";
-    document.getElementById('peekabooText').style.opacity="1";
-    document.getElementById('peekabooCloseArrow').style.display="block";
   }
 
-}
 
   function peekabooClose() {
     document.getElementById('peekaboo').style.width= null;
@@ -104,10 +83,12 @@ function jumpScroll() {
       top: 0,
       behavior: 'smooth'
     });
+    document.getElementById('leftArrowCommisionGallery').style.opacity="1";
 };
 
 function jumpScrollBack() {
   document.getElementById('commisionGalleryWrapperBig').scroll(0,0);
+  document.getElementById('leftArrowCommisionGallery').style.opacity="0";
  };
 
  // Horizontal scroll Fanart on index
@@ -119,8 +100,32 @@ function jumpScrollBack() {
        top: 0,
        behavior: 'smooth'
      });
+     document.getElementById('leftArrowCommisionGallery2').style.opacity="1";
  };
 
  function jumpScrollBack2() {
    document.getElementById('commisionGalleryWrapperBig2').scroll(0,0);
+   document.getElementById('leftArrowCommisionGallery2').style.opacity="0";
   };
+
+
+  // Sticky thingy in commisions PAGE
+
+  // When the user scrolls the page, execute myFunction
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function noteBoxSticky(){
+  // Get the navbar
+  var noteBox = document.getElementById("noteBox");
+
+  // Get the offset position of the navbar
+  var sticky = noteBox.offsetTop;
+
+  if (window.pageYOffset >= sticky) {
+    noteBox.classList.add("sticky");
+
+  } else {
+    noteBox.classList.remove("sticky");
+
+  }
+}

@@ -123,7 +123,10 @@ h3 {
 #burgerMenu li {
   width:100%;
   margin-bottom:20px;
+}
 
+#mobilePortfolioLink {
+  display:none;
 }
 
 
@@ -132,7 +135,7 @@ h3 {
   display:block;
   position:fixed;
   width:100vw;
-  height:100vh;
+  height:100%;
   top:0
   padding:0;
   margin:0;
@@ -180,7 +183,6 @@ h3 {
 /* MAIN CONTENT INDEX MOB */
 
 #MainWrapper {
-  margin-bottom:500px;
 }
 
 /* INDEX BUTTONS */
@@ -189,61 +191,18 @@ h3 {
   display:none;
 }
 
+/* Desk top content wrapper */
+
+#desktopWrapper {
+  position:relative;
+  min-height:100%;
+  max-height:100%;
+}
+
 /* PEEK-A-BOO INDEX */
 
 #peekaboo {
-  position:fixed;
-  right:0;
-  width:0.3vw;
-  background-color:#f37b36;
-  padding-left:40px;
-  padding-top:15px;
-  padding-right:5px;
-  border-radius: 20px 0 0 20px;
-  box-shadow:1px 20px 5px rgba(64, 64, 64, 0.5);
-  z-index:2;
-  margin-top:60vh;
-  transition-duration:0.3s;
-  transition-delay:0.2s;
-}
-
-#peekabooIndex {
-  position:absolute;
-  top:0;
-}
-
-#peekabooText {
-  position:absolute;
-  top:20px;
-  right:250px;
-  opacity:0;
-  margin-left:30px;
-  margin-top:20px;
-  transition-duration:0.2s;
-  font-size:1.5em;
-  float:left;
-}
-
-#peekabooCloseArrow {
-  position:absolute;
-  top:5px;
   display:none;
-  font-size:5em;
-  float:left;
-}
-
-#peekabooInstagram, #peekabooTumblr{
-  width:30px;
-  height:auto;
-  float:right;
-  margin-bottom:15px;
-  clear:none;
-  transition-duration:0.3s;
-  transition-delay:0.2s;
-}
-
-#peekabooInstagramLink, #peekabooTumblrLink {
-  pointer-events:none;
 }
 
 /* Portfoliom Mobile CSS */
@@ -365,6 +324,8 @@ h3 {
   margin-left:1%;
   margin-right:10%;
   z-index:3;
+  cursor:pointer;
+  transition-duration:0.4s;
 }
 
 .shortSliderArrowRight, .shortSliderArrowLeft {
@@ -378,8 +339,11 @@ h3 {
 .rightArrowCommisionGallery {
   right:-5%;
 }
+
+.leftArrowCommisionGallery {
+  opacity:0;
+}
 .ItemOnCommisionsPage{
-  margin-left:5%;
 }
 
 #previousCommisionsHeader {
@@ -387,41 +351,85 @@ h3 {
 }
 
 #commisionPrices {
-margin-left:5%;
+  position:relative;
+  width:50%;
+  margin-left:5%;
+  float:left;
+  margin-bottom:50px;
 }
 
 .commisionPriceBox {
   margin-top:30px;
-  margin-bottom:70px;
+  float:left;
+}
+
+.commisionPriceBox h2 {
+  position:absolute;
+  background-color:#404040;
+  padding:20px;
+  right:0;
+  min-width:40%;
+  text-align:right;
 }
 
 .commisionPriceImage {
-  width:95%;
-  margin:auto;
+  width:100%;
+  float:left;
+  height:auto;
 }
 
 #commisionMeBtn, #tosBtn {
-  width:60%;
+  position:relative;
+  width:50%;
   min-height: 100px;
-  margin:auto;
-  margin-left:20%;
-  margin-bottom:30px;
+  margin-left:5%;
+  margin-bottom:50px;
+  background-color:#f37b36;
+  padding:20px;
+  margin-bottom:25px;
+  border-radius:20px;
+  box-shadow:10px 10px 5px rgba(64, 64, 64, 0.5);
+  cursor:pointer;
 }
 
 #commisionButtons {
-  margin-bottom:500px;
+  margin-bottom:60px;
+
 }
 
 /* note Box on commisions page */
 
+#noteBox {
+}
+
 .noteBox {
-  width:90%;
+  position:relative;
+  margin-top:50px;
+  float:right;
+  width:30%;
   margin-bottom:100px;
+  right:5%;
+  padding:10px;
+
 }
 
 .noteBox p {
-  font-size:30px;
-  margin-bottom:50px;
+  font-size:1em;
+  margin-bottom:15px;
+}
+
+.sticky {
+  padding:10px;
+  position:fixed;
+  top:45px;
+  width:30%;
+  margin-bottom:100px;
+  right:5%;
+}
+
+.stickyStopped {
+  position:absolute;
+  top:290%;
 }
 
 /* ABOUT ME CSSS */
@@ -502,20 +510,179 @@ margin-left:5%;
   border-bottom-right-radius: 0;
 }
 
-@media screen and (min-width: 1900px){
+
+/* Image GRID INDEX */
+
+#imageGridIndex {
+  position:relative;
+  width:90%;
+  margin-left:5%;
+}
+
+.columnIndex {
+  display:block;
+  width:33%;
+  float:left;
+}
+
+.gridItem {
+  position:relative;
+  display:block;
+  border-radius:5px;
+  margin-right:5%;
+  margin-bottom:20px;
+}
+
+.gridImg {
+  width:100%;
+  height:auto;
+  border-radius:inherit;
+}
+
+.gridItem a {
+  border-radius:inherit;
+}
+
+.gridItemOverlay {
+  position:absolute;
+  width:100%;
+  height:20%;
+  background-color:#404040;
+  border-radius:inherit;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  padding-left:0px;
+
+  transition-duration: 0.5s ;
+  transition-timing-function: ease-in-out;
+  transition-delay:0.2s;
+}
+
+.gridItemOverlay:hover {
+  padding-left:15%;
+}
+
+.gridItemOverlayTextBox {
+  padding:10px;
+}
+
+.invisTextBox {
+  display:none;
+  position:absolute;
+  height:100%;
+  width:80%;
+  margin:auto;
+  z-index:3;
+
+  transition-duration:0.4s;
+  transition-delay:0.4s;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+  height:400px;
+  position:relative;
+  bottom:0;
+  left:0;
+  overflow:hidden;
+  clear:both;
+}
+
+#footerBackground {
+  margin-top:10%;
+  height:100%;
+  background-color:#659157;
+  transform:skew(0,-5deg);
+}
+
+#footerContent {
+  position:absolute;
+  top:40%;
+  left:5%;
+  z-index:2;
+  width:50vw;
+}
+
+#footerContent h2 {
+  margin-bottom:10px;
+}
+
+#footerContent p {
+  margin-bottom: 15px;
+  font-size:1em;
+}
+.smallestOfHeaders {
+  font-size:1em;
+  margin-bottom:0;
+}
+
+#footerIcons {
+  position:absolute;
+  top:70%;
+  left:80%;
+  width:50%;
+  height:100px;
+  z-index:3;
+}
+
+#footerIcons h2 {
+  margin-bottom:20px;
+}
+
+.footerIcon {
+  max-width:50px;
+  height:auto;
+  margin-left:10px;
+  cursor:pointer;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1500px){
   .portfolioImg {
-    min-width:10vw;
-    max-width:11vw;
+    min-width:20vw;
+    max-width:21vw;
   }
   .imageGallerySliderWrapper {
     position:relative;
     margin-left:5%;
     margin-bottom:50px;
-    min-width:150vw;
+    min-width:250vw;
+  }
+
+  .myGallerySlides {
+    margin-right:3%;
   }
   .leftArrowCommisionGallery, .rightArrowCommisionGallery {
     top:40%;
   }
+#footerContent {
+  width:20%;
+  right:5%;
+  left:75%;
+}
+
+#footer {
+  height:500px;
+}
+
+#footerIcons {
+  top:60%;
+  left:5%;
+}
+
+.footerIcon {
+  max-width:80px;
+}
+.noteBox p {
+  font-size:2em;
+}
+.noteBox h3 {
+  font-size:2em;
+}
 
 
 }

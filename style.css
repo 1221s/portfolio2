@@ -120,7 +120,10 @@ h3 {
   width:100%;
   padding:30px;
   margin-bottom:20px;
+}
 
+#desktopHomeLink {
+  display:none;
 }
 
 
@@ -328,21 +331,26 @@ h3 {
   background-color:#f37b36;
 }
 
+.indexHeader {
+  margin-bottom:20px;
+  margin-left:5%;
+}
+
 /* image gallery slider NETFLIX */
 
 .wrapper {
+  display:block;
   position:relative;
-  height:inherit;
-  margin-top:50px;
-  max-height:1400px;
+  height:auto;
 }
 
 .wrapperSmall {
-  max-height:800px;
+  position:inherit;
 }
 
 .bigSliderWrapper {
-  position:absolute;
+  position:inherit;
+  display:block;
 }
 
 #commisionGalleryWrapperBig{
@@ -352,36 +360,32 @@ h3 {
   scroll-behavior:smooth;
 }
 
+
 .imageGallerySliderWrapper {
   position:relative;
-  float:left;
   margin-left:5%;
   margin-bottom:50px;
-  max-width:600vw;
-  min-width:400vw;
-  margin-right:60px;
-  clear:none;
+  min-width:800vw;
 }
 
 .myGallerySlides {
   display:inline-block;
-  max-width:900px;
-  min-width:150px;
+  max-width:80vw;
   height:auto;
-  float:left;
-  padding-right:60px;
   clear:none;
+  margin-right:15px;
 }
 
+.myGallerySlides p {
+  font-size:.8em;
+}
+.portfolioImg {
+  min-width:60vw;
+  max-width:80vw;
+}
 
 .leftArrowCommisionGallery, .rightArrowCommisionGallery {
-  position:absolute;
   display:none;
-  clear:both;
-  top:50%;
-  margin-left:10%;
-  margin-right:10%;
-  z-index:6;
 }
 
 .shortSliderArrowRight, .shortSliderArrowLeft {
@@ -389,18 +393,11 @@ h3 {
 }
 
 .leftArrowCommisionGallery i, .rightArrowCommisionGallery i {
-  font-size:80px;
+  font-size:3em;
 }
 
 .rightArrowCommisionGallery {
-  right:0;
-}
-.ItemOnCommisionsPage{
-  margin-left:5%;
-}
-
-#previousCommisionsHeader {
-  margin-left:5%;
+  right:-5%;
 }
 
 #commisionPrices {
@@ -434,6 +431,7 @@ margin-left:5%;
 .noteBox {
   width:90%;
   margin-bottom:100px;
+  margin-left:5%;
 }
 
 .noteBox p {
@@ -517,4 +515,8 @@ margin-left:5%;
   border-radius:inherit;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+#footer {
+  display:none;
 }
