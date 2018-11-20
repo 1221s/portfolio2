@@ -19,6 +19,7 @@ document.getElementById('peekaboo').addEventListener("click", function(){peekabo
 document.getElementById('peekabooCloseArrow').addEventListener("click", function(){peekabooClose()}, true);
 
 function peekabooOpen(){
+  if(window.innerWidth <= 600) {
 
     document.getElementById('peekaboo').style.width="80vw";
 
@@ -36,7 +37,28 @@ function peekabooOpen(){
 
     document.getElementById('peekabooText').style.opacity="1";
     document.getElementById('peekabooCloseArrow').style.display="block";
+  } else {
+    document.getElementById('peekaboo').style.width="50vw";
+
+    document.getElementById('peekabooInstagram').style.clear="none";
+    document.getElementById('peekabooTumblr').style.clear="none";
+
+    document.getElementById('peekabooInstagram').style.width="70px";
+    document.getElementById('peekabooTumblr').style.width="70px";
+
+    document.getElementById('peekabooInstagram').style.marginRight="30px";
+        document.getElementById('peekabooTumblr').style.marginRight="30px";
+
+    document.getElementById('peekabooInstagramLink').style.pointerEvents="auto";
+    document.getElementById('peekabooTumblrLink').style.pointerEvents="auto";
+
+
+    document.getElementById('peekabooText').style.transitionDelay="0.4s";
+    document.getElementById('peekabooText').style.opacity="1";
+    document.getElementById('peekabooCloseArrow').style.display="block";
   }
+
+}
 
   function peekabooClose() {
     document.getElementById('peekaboo').style.width= null;
@@ -53,6 +75,7 @@ function peekabooOpen(){
     document.getElementById('peekabooInstagram').style.marginRight=null;
     document.getElementById('peekabooTumblr').style.marginRight=null;
     document.getElementById('peekabooText').style.opacity=null;
+    document.getElementById('peekabooText').style.transitionDelay=null;
     document.getElementById('peekabooCloseArrow').style.display=null;
   }
 
@@ -72,12 +95,32 @@ function showSlides() {
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
 
-// horizontal scroller
+// horizontal scroller BASE
 
 function jumpScroll() {
-   document.getElementById('commisionGalleryWrapperBig').scrollBy(910,0);
-}
+
+    document.getElementById('commisionGalleryWrapperBig').scrollBy({
+      left: 900,
+      top: 0,
+      behavior: 'smooth'
+    });
+};
 
 function jumpScrollBack() {
-   document.getElementById('commisionGalleryWrapperBig').scroll(0,0);
-}
+  document.getElementById('commisionGalleryWrapperBig').scroll(0,0);
+ };
+
+ // Horizontal scroll Fanart on index
+
+ function jumpScroll2() {
+
+     document.getElementById('commisionGalleryWrapperBig2').scrollBy({
+       left: 900,
+       top: 0,
+       behavior: 'smooth'
+     });
+ };
+
+ function jumpScrollBack2() {
+   document.getElementById('commisionGalleryWrapperBig2').scroll(0,0);
+  };
