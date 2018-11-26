@@ -503,6 +503,11 @@ margin-left:5%;
   height:auto;
   border-radius:inherit;
 }
+
+.blogPostBox a {
+  border-radius:20px;
+}
+
 .blogPostBox p {
   text-align:left;
 }

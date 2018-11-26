@@ -124,7 +124,9 @@ function noteBoxSticky(){
   if (window.pageYOffset >= sticky) {
     noteBox.classList.add("sticky");
 
-  } else {
+  } else if(window.pageYOddset <= 0.100) {
+    noteBox.classList.remove("sticky");
+  }else {
     noteBox.classList.remove("sticky");
 
   }
