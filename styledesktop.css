@@ -263,7 +263,12 @@ h3 {
 }
 
 .wrapperSmall {
-  max-height:inherit;
+  height:400px;
+  width:70%;
+  margin:auto;
+  background-color:#404040;
+  border-radius:20px;
+  padding-top:5px;
 }
 
 .bigSliderWrapper {
@@ -437,7 +442,7 @@ h3 {
 #aboutMeBigWrapperBig {
   position:relative;
   height:100%;
-  margin-bottom:1300px;
+  margin-bottom:500px;
 }
 
 .aboutMeWrapper {
@@ -448,21 +453,30 @@ h3 {
 
 .aboutMeWrapper h1 {
   right:10;
-  margin-bottom:10px;
-  text-align:center;
+  margin-bottom:20px;
+  text-align:left;
+  margin-left:5%;
 }
 
 #selfie  {
-  width:100%;
+  position:absolute;
+  width:30%;
   margin-left:5%;
-  margin-top:100px;
+  margin-top:10px;
+  border-radius:20px;
+  transform:rotate(10deg);
+  float:left;
+  margin-right:50px;
+
+  box-shadow:30px 30px 5px rgba(64, 64, 64, 0.5);
 }
 
  .aboutMeTextWrapper {
   position:relative;
   margin-top:20px;
-  width:90%;
-  margin-left:5%;
+  width:40%;
+  margin-bottom:100px;
+  margin-left:40%;
 }
 
 .aboutMeTextWrapper p{
@@ -471,28 +485,33 @@ h3 {
 
 .proficienciesHeader {
   margin-left:5%;
+  margin-top:20px;
   margin-bottom:50px;
-  margin-top:100px;
+  text-align:center;
 }
 .proficiencies {
-  width:400px;
+  width:150px;
+  margin:0;
 }
 
 
 /* HERE STARTS BLOG CSS */
 .blogPostBoxesWrapper {
-  width:90vw;
+  width:90%;
   margin:auto;
   text-align:center;
   }
 
 .blogPostBox {
+  width:30%;
   position:relative;
   border-radius:20px;
-  margin-bottom:100px;
+  margin-bottom:50px;
+  float:left;
+  margin-right:15px;
 }
 .blogPostBox img {
-  width:90vw;
+  width:100%;
   height:auto;
   border-radius:inherit;
 }
@@ -503,7 +522,8 @@ h3 {
 .blogPostText {
   position:absolute;
   display:block;
-  padding:40px;
+  padding:20px;
+  max-height:50%;
   background-color:#659157;
   border-radius:inherit;
   border-bottom-left-radius: 0;
@@ -659,6 +679,7 @@ h3 {
   .leftArrowCommisionGallery, .rightArrowCommisionGallery {
     top:40%;
   }
+
 #footerContent {
   width:20%;
   right:5%;
@@ -684,5 +705,22 @@ h3 {
   font-size:2em;
 }
 
+.wrapperSmall {
+  margin-top:200px;
+}
+
+#selfie {
+  margin-top:70px;
+  min-width:600px;
+  margin-left:10%;
+}
+.aboutMeTextWrapper {
+  margin-top:150px;
+  width:40%;
+  margin-left:50%;
+}
+.aboutMeTextWrapper p {
+  font-size:30px;
+}
 
 }
