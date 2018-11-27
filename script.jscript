@@ -1,4 +1,22 @@
+
+
 window.onload = load();
+
+// LOADING screen
+function load() {
+  var loadingtime;
+  loadingtime = setTimeout(loadPage(), 5000);
+}
+
+function loadPage(){
+  document.getElementById('loader').style.zIndex="-20";
+  document.getElementById('loader').style.opacity="0";
+
+  document.getElementById('body').style.overflow="auto";
+  console.log('hi loadpage');
+};
+
+//BURGER
 
 function BurgerMenu() {
     document.getElementById('burgerMenu').style.display="block";
@@ -177,17 +195,3 @@ function showBox1() {
     arrowRight.style.display="block";
     arrowLeft.style.display="none";
 }
-
-// LOADING screen
-function load() {
-  var loadingtime;
-  loadingtime = setTimeout(loadPage(), 5000);
-}
-
-function loadPage(){
-  document.getElementById('loader').style.zIndex="-20";
-  document.getElementById('loader').style.opacity="0";
-
-  document.getElementById('body').style.overflow="auto";
-  console.log('hi loadpage');
-};
