@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="style.css">
-    <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="styledesktop.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="../style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="../styledesktop.css">
 
     <meta charset="utf-8">
-    <title>1221s: Blog</title>
+    <title>1221s: Home</title>
     <!-- FAVICON -->
     <link rel="icon"
       type="image/png"
-      href="favicon.png">
+      href="../favicon.png">
     <!-- REMEMBER TO INSERT META TAGS -->
 
     <script
@@ -23,7 +23,7 @@
         crossorigin="anonymous" defer>
       </script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script type="text/javascript" src="script.jscript" defer>
+    <script type="text/javascript" src="../script.jscript" defer>
     </script>
 
   </head>
@@ -33,7 +33,7 @@
 
 <div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
 <header id="header">
-  <section id="mainWrapperHeaderSmall">
+  <section id="mainWrapperHeader">
           <div id="burger1" onclick="BurgerMenu()">
               <div class="burgerLine"></div>
               <div class="burgerLine"></div>
@@ -50,19 +50,37 @@
           <ul>
             <li id="mobilePortfolioLink"> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
             <li id="desktopHomeLink"> <a href="index.html"><h2>Home</h2></a> </li>
-            <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
+          <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
             <li> <a href="about.html"><h2>About Me</h2></a> </li>
             <li> <a href="blog.html"><h2>Process Blog</h2></a> </li>
           </ul>
       </div>
 
-    <div id="logo1"> <a href="index.html">
-      <span class="headerText"><p>1221s</p></span>
-      </a>
+    <div id="logo">
+      <span class="headerText"><p>1221s</p> <p class="space"></p> <p>PORTFOLIO</p></span>
     </div>
+
+          <div id="indexImageSlides">
+            <div class="mySlides fade">
+              <img class=" image imageSliderImage" src="img/imageslider/swampland.jpg" alt="swampland">
+            </div>
+
+            <div class="mySlides fade">
+              <img class=" image imageSliderImage" src="img/imageslider/mountainrange.jpg" alt="mountainrange">
+            </div>
+
+            <div class="mySlides fade">
+              <img class=" image imageSliderImage" src="img/imageslider/pond.jpg" alt="pond">
+            </div>
+
+            <div class="mySlides fade">
+              <img class=" image imageSliderImage" src="img/imageslider/river.jpg" alt="river">
+            </div>
+          </div>
 
     </section>
 </header>
+
 
 <div id="peekabooIndex">
   <div id="peekaboo" addEventListener="click">
@@ -72,47 +90,17 @@
   </div></div>
 
 <section id="MainWrapper">
-
-  <ul class="blogPostBoxesWrapper">
-
-    <li class="blogPostBox">
-      <a href="blogposts/proj1.html"> <div class="blogPostText">
-        <h2>Projekt 1</h2>
-        <span> <p>Her er en cool lille tekst omkring projektet</p> </span>
-      </div> </a>
-      <img src="blogposts/img/proj1.jpg" alt="a cool image" class="blogPostImg">
-    </li>
-
-    <li class="blogPostBox">
-      <a href="blogposts/proj1.html"> <div class="blogPostText">
-        <h2>Projekt 1</h2>
-        <span> <p>Her er en cool lille tekst omkring projektet</p> </span>
-      </div> </a>
-      <img src="blogposts/img/proj1.jpg" alt="a cool image" class="blogPostImg">
-    </li>
-
-    <li class="blogPostBox">
-      <a href="blogposts/proj1.html"> <div class="blogPostText">
-        <h2>Projekt 1</h2>
-        <span> <p>Her er en cool lille tekst omkring projektet</p> </span>
-      </div> </a>
-      <img src="blogposts/img/proj1.jpg" alt="a cool image" class="blogPostImg">
-    </li>
-
-    <li class="blogPostBox">
-      <a href="blogposts/proj1.html"> <div class="blogPostText">
-        <h2>Projekt 1</h2>
-        <span> <p>Her er en cool lille tekst omkring projektet</p> </span>
-      </div> </a>
-      <img src="blogposts/img/proj1.jpg" alt="a cool image" class="blogPostImg">
-    </li>
-
-  </ul>
-
+<section id="indexButtons">
+    <ul id="indexButtonsList">
+      <li class="indexButtonsListItem" id="indexButtonsListItem1"><a href="portfoliomob.html"><h3>Portfolio</h3></a></li>
+      <li class="indexButtonsListItem"id="indexButtonsListItem2"> <a href="commisions.html"><h2>Commisions</h2></a> </li>
+      <li class="indexButtonsListItem" id="indexButtonsListItem3"> <a href="about.html"><h2>About Me</h2></a> </li>
+      <li class="indexButtonsListItem" id="indexButtonsListItem4"> <a href="blog.html"><h2>Process Blog</h2></a> </li>
+    </ul>
 </section>
 
 
+</section>
 
-<footer id="footer"></footer>
   </body>
 </html>

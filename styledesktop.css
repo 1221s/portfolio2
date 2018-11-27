@@ -35,6 +35,7 @@ h3 {
 
 
 #body {
+  overflow:hidden;
   position:absolute;
   background-color:#515151;
   width:100%;
@@ -179,6 +180,30 @@ h3 {
   font-size:20px;
   color:#ffffff;
 }
+
+/* LOADER LOADING SCREEN  */
+
+.loader {
+  position:absolute;
+  display:block;
+  opacity:1;
+  height:100%;
+  width:100%;
+  background-color:#404040;
+  z-index:21;
+
+
+    transition-duration:2s;
+}
+.loaderGif {
+  display:block;
+  position:absolute;
+  width:20%;
+  height:auto;
+  left:40%;
+  top:20%;
+}
+
 
 /* MAIN CONTENT INDEX MOB */
 
@@ -568,6 +593,10 @@ h3 {
   border-radius:5px;
   margin-right:5%;
   margin-bottom:20px;
+  transition-duration:0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay:0.2s;
+
 }
 
 .gridImg {
@@ -583,20 +612,17 @@ h3 {
 .gridItemOverlay {
   position:absolute;
   width:100%;
-  height:20%;
+  min-height:30%;
   background-color:#404040;
   border-radius:inherit;
   border-bottom-left-radius:0;
   border-bottom-right-radius:0;
   padding-left:0px;
-
-  transition-duration: 0.5s ;
-  transition-timing-function: ease-in-out;
-  transition-delay:0.2s;
 }
 
-.gridItemOverlay:hover {
-  padding-left:15%;
+.gridItem:hover {
+  border-radius:40px;
+  box-shadow:5px 15px 2px rgba(64, 64, 64, 0.8);
 }
 
 .gridItemOverlayTextBox {
@@ -674,6 +700,50 @@ h3 {
   height:auto;
   margin-left:10px;
   cursor:pointer;
+}
+
+/* HERE STARTS FRATRICIDE SUBPAGE CSS */
+
+.flipImageArrow {
+  font-size:40px;
+}
+
+.flipImageArrowDiv {
+  position:absolute;
+  top:50%;
+  z-index:4;
+  text-align:center;
+}
+
+#flipImageArrowLeft {
+  display:none;
+  left:10%;
+}
+#flipImageArrowRight {
+  display:block;
+  right:10%;
+}
+
+#imageBoxFratricide1, #imageBoxFratricide2 {
+  display:block;
+  position:absolute;
+  width:60%;
+  transition-duration:1s;
+}
+
+.imageBoxFratricide img {
+  width:45%;
+  margin-left:5%;
+  float:left;
+}
+#imageBoxFratricide1 {
+  opacity:1;
+  left:18%;
+}
+
+#imageBoxFratricide2 {
+  opacity:0;
+  right:5%;
 }
 
 /* MEDIA QUERY */

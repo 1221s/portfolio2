@@ -1,3 +1,5 @@
+window.onload = load();
+
 function BurgerMenu() {
     document.getElementById('burgerMenu').style.display="block";
     document.getElementById('mainOverlayBurger').style.zIndex="5";
@@ -131,3 +133,61 @@ function noteBoxSticky(){
 
   }
 }
+
+// TURNPAGE on Fratricide SUBPAGE
+document.getElementById('flipImageArrowRight').addEventListener("click", function(){showBox2()}, true);
+document.getElementById('flipImageArrowLeft').addEventListener("click", function(){showBox1()}, true);
+
+
+function showBox2() {
+var box1 = document.getElementById('imageBoxFratricide1');
+var box2 = document.getElementById('imageBoxFratricide2');
+var arrowLeft = document.getElementById('flipImageArrowLeft');
+var arrowRight = document.getElementById('flipImageArrowRight');
+
+  box1.style.opacity = "0";
+  box1.style.left="5%";
+  box1.style.transitionDelay="0s";
+  box2.style.transitionDelay="0.5s";
+
+  box2.style.opacity="1";
+  box2.style.right="20%";
+
+  arrowLeft.style.display="block";
+  arrowRight.style.display="none";
+
+}
+
+function showBox1() {
+  var box1 = document.getElementById('imageBoxFratricide1');
+  var box2 = document.getElementById('imageBoxFratricide2');
+  var arrowLeft = document.getElementById('flipImageArrowLeft');
+  var arrowRight = document.getElementById('flipImageArrowRight');
+
+    box2.style.opacity="0";
+    box2.style.right="5%";
+
+
+    box2.style.transitionDelay="0s";
+    box1.style.transitionDelay="0.5s";
+    box1.style.opacity = "1";
+    box1.style.left="20%";
+
+
+    arrowRight.style.display="block";
+    arrowLeft.style.display="none";
+}
+
+// LOADING screen
+function load() {
+  var loadingtime;
+  loadingtime = setTimeout(loadPage(), 5000);
+}
+
+function loadPage(){
+  document.getElementById('loader').style.zIndex="-20";
+  document.getElementById('loader').style.opacity="0";
+
+  document.getElementById('body').style.overflow="auto";
+  console.log('hi loadpage');
+};
