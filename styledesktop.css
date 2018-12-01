@@ -89,6 +89,7 @@ h3 {
   left:10px;
   top:5px;
   z-index:16;
+  cursor:pointer;
 }
 
 #burger2 {
@@ -97,6 +98,7 @@ h3 {
   left:10px;
   top:5px;
   z-index:16;
+  cursor:pointer;
 }
 
 .burgerLine {
@@ -743,7 +745,7 @@ h3 {
   right:10%;
 }
 
-#fratricideLightBox {
+#fratricideLightBox, #websiteLightBox {
   position:fixed;
   display:block;
   height:75vh;
@@ -754,11 +756,15 @@ h3 {
   top:95%;
   padding:50px;
   padding-top:20px;
-  z-index:2;
+  z-index:7;
 
+  overflow:scroll;
   opacity:0;
-
   transition-duration:0.8s;
+}
+
+#fratricideLightBox::-webkit-scrollbar, #websiteLightBox::-webkit-scrollbar {
+  display:none;
 }
 
 #imageBoxFratricide1, #imageBoxFratricide2 {
@@ -786,7 +792,7 @@ h3 {
   z-index:-1;
 }
 
-#fratricideText {
+#fratricideText, #websiteText {
   width:50%;
   margin:auto;
 }
@@ -800,10 +806,25 @@ h3 {
   right:5%;
   top:5%;
   cursor:pointer;
+  
 }
 .closeLightBox i{
   font-size:30px;
 }
+
+/* HERE COMES THE ANIMATION FRAME BY FRAME CSS */
+#animationRight {
+  position:absolute;
+  top:50%;
+  right:5%;
+}
+
+#animationLeft {
+  position:absolute;
+  top:50%;
+  left:5%;
+}
+
 
 /* MEDIA QUERY */
 
