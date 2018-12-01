@@ -606,6 +606,7 @@ h3 {
   transition-timing-function: ease-in-out;
   transition-delay:0.2s;
 
+  cursor:pointer;
 }
 
 .gridImg {
@@ -630,8 +631,7 @@ h3 {
 }
 
 .gridItem:hover {
-  border-radius:40px;
-  box-shadow:5px 15px 2px rgba(64, 64, 64, 0.8);
+  box-shadow:5px 10px 2px rgba(64, 64, 64, 0.5);
 }
 
 .gridItemOverlayTextBox {
@@ -712,6 +712,15 @@ h3 {
 }
 
 /* HERE STARTS FRATRICIDE SUBPAGE CSS */
+#MainFratWrapper {
+  margin-top:100px;
+}
+
+.flipImageWrapper {
+  height:100%;
+  width:100%;
+  display:block;
+}
 
 .flipImageArrow {
   font-size:40px;
@@ -722,6 +731,7 @@ h3 {
   top:50%;
   z-index:4;
   text-align:center;
+  cursor:pointer;
 }
 
 #flipImageArrowLeft {
@@ -731,6 +741,24 @@ h3 {
 #flipImageArrowRight {
   display:block;
   right:10%;
+}
+
+#fratricideLightBox {
+  position:fixed;
+  display:block;
+  height:75vh;
+  width:80vw;
+  background-color:#404040;
+  text-align:center;
+  left:10%;
+  top:95%;
+  padding:50px;
+  padding-top:20px;
+  z-index:2;
+
+  opacity:0;
+
+  transition-duration:0.8s;
 }
 
 #imageBoxFratricide1, #imageBoxFratricide2 {
@@ -747,17 +775,39 @@ h3 {
 }
 #imageBoxFratricide1 {
   opacity:1;
-  left:18%;
+  top:15%;
+  right:22%;
 }
 
 #imageBoxFratricide2 {
-  opacity:0;
+  opacity:0.2;
+  top:20%;
+  right:20%;
+  z-index:-1;
+}
+
+#fratricideText {
+  width:50%;
+  margin:auto;
+}
+
+#fratricideText p, #fratricideText h1 {
+  font-size: 10px;
+}
+
+.closeLightBox {
+  position:absolute;
   right:5%;
+  top:5%;
+  cursor:pointer;
+}
+.closeLightBox i{
+  font-size:30px;
 }
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1400px){
   .portfolioImg {
     min-width:20vw;
     max-width:21vw;
@@ -822,6 +872,16 @@ h3 {
 .blogPostBox {
   width:22%;
 
+}
+#fratricideText p, #fratricideText h1 {
+  font-size: 20px;
+}
+#fratricideLightBox {
+  height:80vh;
+}
+
+@media screen and (max-width: 1100px){
+#fratricideText {
 }
 
 }
