@@ -854,6 +854,24 @@ h3 {
   width:80%;
 }
 
+/* HERE STARTS BLOG POST CSS */
+
+.process-page-container {
+  width:90%;
+  margin:auto;
+  margin-bottom:100px;
+}
+
+.blogPostImage {
+  max-width:100%;
+  margin-top:60px;
+  margin-bottom:50px;
+}
+#mograph-logo {
+  margin-top:-80px;
+  margin-bottom:0;
+}
+
 
 /* MEDIA QUERY */
 
