@@ -551,6 +551,7 @@ h3 {
 
 .blogPostBox {
   width:30%;
+  height:200px;
   position:relative;
   border-radius:20px;
   margin-bottom:50px;
@@ -583,6 +584,11 @@ h3 {
   border-bottom-right-radius: 0;
 }
 
+
+
+.blogPostImg {
+  margin-top:70px;
+}
 
 /* Image GRID INDEX */
 
@@ -939,6 +945,7 @@ h3 {
 
 .blogPostBox {
   width:22%;
+  margin-bottom:100px;
 
 }
 #fratricideText p, #fratricideText h1 {
