@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave|Questrial|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="../style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="../styledesktop.css">
+
+    <meta charset="utf-8">
+    <title>1221s: Blog</title>
+    <!-- FAVICON -->
+    <link rel="icon"
+      type="image/png"
+      href="favicon.png">
+    <!-- REMEMBER TO INSERT META TAGS -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous" defer>
+      </script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../script.jscript" defer>
+    </script>
+
+  </head>
+
+<body id="body">
+
+
+<div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
+<header id="header">
+  <section id="mainWrapperHeaderSmall">
+          <div id="burger1" onclick="BurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+          <div id="burger2" onclick="hideBurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+      <div id="burgerMenu">
+          <ul>
+            <li id="mobilePortfolioLink"> <a href="../portfoliomob.html"><h2>Portfolio</h2></a> </li>
+            <li id="desktopHomeLink"> <a href="../index.html"><h2>Home</h2></a> </li>
+            <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
+            <li> <a href="../about.html"><h2>About Me</h2></a> </li>
+            <li> <a href="../blog.html"><h2>Process Blog</h2></a> </li>
+          </ul>
+      </div>
+
+    <div id="logo1"> <a href="index.html">
+      <span class="headerText"><p>1221s</p></span>
+      </a>
+    </div>
+
+    </section>
+</header>
+
+<!-- page content -->
+<section class="process-page-container">
+  <h1 class="header-process">After effects</h1>
+  <section class="intro">
+<br>  I’ve used after effects before during my course at SDE called Digital Media, so I already had some semblance of skill with using its tools before we had classes about it at UCL.
+
+    <br><br>I created a super short 10-second video which turned into a mock-play-of-the-game from Overwatch (A popular shooter-game). Due to the game’s popularity it was surprisingly easy to find characters with a somewhat clear background in good quality. I chose the character Mccree to work with as I had already started forming an idea in my head to have him shoot some dummy-targets.
+    <br>The dummy targets, I decided, would be old vaudeville crop-outs, which would help train my usage of masks and transformations.
+    <br><br>I created a super rough storyboard to work from:
+    <br><img src="images/aestory.jpg" id="infographic-png" alt="storyboard" class="process-main-img">
+
+    <br><br>From there I started out with finding materials, backgrounds, clips to use and started setting up my scenes.
+
+    <br><br>I created three ‘compositions’ with two being very similar ones, focused on Mccree with a foggy background and some trees and a composition with the targets being shot down.
+    <br>In my storyboard I had envisioned having a transition scene where he aims the gun, but sadly I wasn’t able to find any footage I could work with.
+
+    <br><br><img src="images/scenesleftbehind.jpg" id="infographic-png" alt="storyboard" class="process-main-img">
+
+    <br><br>I think what I had the most trouble with was getting the white background to dissappear without also turning the character ghostly and with weird spots around the corners of the frame.
+    <br>Luckily, I managed to fix this issue by simply switching from trying to use key light and instead using color range to remove the background.
+
+    <br>About midway through the process I was getting bored. I wanted this video to be funny or uplifting, something other than just another badly edited potg-rip offs. In the end, of course it is still just a badly edited potg-ripoff, but at least I hope I put a spin on it and if nothing else at least I feel a little more confident about my after effect skills.
+    <br>But back to it having to be funny.
+    <br>I was looking for ‘pling’ sounds for when Mccree shoots the targets, and stumbled upon a bunch of soundfiles of men yelling “no” or variations thereof which I thought would be funny to put throughout the video.
+    <br>As the cherry on top, I put a very old, very low quality video at the very end of the person presumeably yelling ‘no’ (i.e. the person who didnt get potg) smacking their computer.
+    <br>Along with the vaudeville cut-outs, I was hoping this would maybe be perceived as an ‘oldtimey’ version of Overwatch or something similar.
+
+    <br><br>This is my final video:
+    <br><br><iframe width="560" height="315" src="videos/aerender.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe><br>
+
+<br>I cant honestly say that I am satisfied with my work, and may update this page in the future with a different project that I can more confidently say I'm proud of.<br>
+
+</section>
+
+  <p class="main-text-process">
+    <p class="underlined-process">
+
+  </p>
+
+</section>
+
+<!-- buttons at the bottom-->
+<section class="back-btn">
+  <div class="process-back-btn"><a href="process.html" class="process-back-btn-link">Return to process gallery</a></div>
+ </section>
+ <section class="back-btn" id="back-to-top">
+   <div class="process-back-btn" onclick="topFunction()">Back to top</div>
+  </section>
+
+
+<!-- burger menu -->
+<script>
+function openNav() {
+    document.getElementById("navbar").style.width = "100%"
+    document.getElementById("body").style.overflow = "hidden";
+    document.getElementById("navbar").style.overflow = "scroll";
+  }
+
+function closeNav() {
+    document.getElementById("navbar").style.width = "0%";
+    document.getElementById("body").style.overflow = "scroll";
+    document.getElementById("navbar").style.overflow = "hidden";
+  }
+</script>
+
+<!-- Back to top button -->
+<script>
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+</body>
+
+</html>

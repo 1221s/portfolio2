@@ -274,16 +274,28 @@ function showDivs(n) {
   var x = document.getElementsByClassName("animationImg");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.opacity="0.5";
-     x[i].style.zIndex = "1";
-     x[i].style.left="40%";
+  for (i <= 1; i < x.length; i++) {
+    x[i].style.opacity="1";
+     x[i].style.zIndex = "2";
+     x[i].style.left="20%";
+     x[i].style.width="100%";
+     x[i].style.top="10%";
   }
-  x[slideIndex-1].style.zIndex = "2";
-  x[slideIndex-1].style.opacity="1";
-  x[slideIndex-1].style.left="20%";
+  x[slideIndex-1].style.zIndex = "1";
+  x[slideIndex-1].style.opacity="0.2";
+  x[slideIndex-1].style.left="40%";
+  x[slideIndex-1].style.width="50%";
+  x[slideIndex-1].style.top="20%";
 
-  x[slideIndex-5].style.zIndex = "1";
-  x[slideIndex-5].style.opacity="0.5";
-  x[slideIndex-5].style.left="10%";
+  x[slideIndex+2].style.zIndex = "1";
+  x[slideIndex+2].style.opacity="0.2";
+  x[slideIndex+2].style.left="10%";
+  x[slideIndex+2].style.width="50%";
+  x[slideIndex+2].style.top="20%";
+
+  x[slideIndex+3].style.zIndex = "0";
+  x[slideIndex+3].style.opacity="0.1";
+  x[slideIndex+3].style.left="20%";
+  x[slideIndex+3].style.width="30%";
+  x[slideIndex+3].style.top="30%";
 }

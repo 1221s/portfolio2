@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave|Questrial|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="../style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="../styledesktop.css">
+
+    <meta charset="utf-8">
+    <title>1221s: Blog</title>
+    <!-- FAVICON -->
+    <link rel="icon"
+      type="image/png"
+      href="favicon.png">
+    <!-- REMEMBER TO INSERT META TAGS -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous" defer>
+      </script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../script.jscript" defer>
+    </script>
+
+  </head>
+
+<body id="body">
+
+
+<div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
+<header id="header">
+  <section id="mainWrapperHeaderSmall">
+          <div id="burger1" onclick="BurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+          <div id="burger2" onclick="hideBurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+      <div id="burgerMenu">
+          <ul>
+            <li id="mobilePortfolioLink"> <a href="../portfoliomob.html"><h2>Portfolio</h2></a> </li>
+            <li id="desktopHomeLink"> <a href="../index.html"><h2>Home</h2></a> </li>
+            <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
+            <li> <a href="../about.html"><h2>About Me</h2></a> </li>
+            <li> <a href="../blog.html"><h2>Process Blog</h2></a> </li>
+          </ul>
+      </div>
+
+    <div id="logo1"> <a href="../index.html">
+      <span class="headerText"><p>1221s</p></span>
+      </a>
+    </div>
+
+    </section>
+</header>
+
+<!-- page content -->
+    <section class="process-page-container">
+      <h1 class="header-process">Infographics</h1>
+      <section class="intro">So, infographics. Telling a story with data, a story you can control by picking what data should be used and creating funny little illustrations that furthers your narrative.<br><br>
+
+                              But what -is- an infographic? Simply put its a way to show data visually in an engaging way that helps make it more easily understand it for someone who is not interested in spending hours wrapping their head around what all the numbers mean.
+                              You could say its a data visualization - its data that has been visualized after all, isnt it?<br><br>
+                              Not quite.<br><br>
+                              A data visualization is typically much more objective and straightforward, it doesnt necesarily contain pictures of apples even if the numbers are depicting apple-consumption rates. You could say a data visualization is the 'proof' behind your infographic, its the pie- and bar-charts. Its the ones that shows tangible data, usually with more numbers than text.
+                              An infographic then presents those data visualizations with a narrative in mind.
+</section>
+      <p class="main-text-process">
+        <p class="underlined-process">Take for example this infographic that I made, based on a survey taken by my multimedia design class;<br></p>
+
+        <img src="images/infographic.png" id="infographic-png" alt="infographic-about-coffee">
+
+        <br><br>It makes use of things like the pie-chart but it also shows data in even more visual ways, like the coffee cup being larger than the water cup because more people in the class drinks coffee. The cup-example goes to show that an infographic doesnt necesarily need data visualizations in order to work, nor is data visualizations unable to stand on their own, but they work well when put together.
+        Like strawberries and cream, both are good in their own right, but they taste great when combined.<br><br>
+
+        <p class="underlined-process">My work process when creating an inforgaphic:<br></p>
+        <img src="images/sittingcup.png" id="sittingcup-png" alt="a-sitting-coffee-cup"><br>
+        <br>Since this was only an exersize, I wasn't intending to dig very deep onto the data to find something exciting. Instead I was focusing on what might be mainstream, something people was used to seeing so I could build on top of already established tropes.<br>
+        I got the idea that I could see if the 'stereotypes' or 'common phrases' associated with coffee drinkers held up in our class and tried to see if there was any correlation between certain bits of data. I didnt find much, but I found enough to build a believable narrative - playing around with the presentation of the data would in the end let me say what I wanted to say.<br>
+        But I needed something to compare the coffee drinkers to, and while water -was- the other largest 'faction' of drinkers in the class, I wanted to lump the other drinks in alongside it - but still use water as the other mascot.<br>
+        That choice also allowed me to use colors to showcase what data belonged to the 'other' drinkers, and which belonged to coffee by using brown and blue hues.<br><br>
+
+        Additionally, this was a big exersize for me in regards to illustrator skills. I never considered myself a pro, but I certainly feel more capeable organizing big files with lots of assets as well as creating a multitude of sprites that all have the same feel/style. I feel like I got a pretty good flow going in the graphic, training my skills in visual 'storytelling' and how I guide the eye around a page.
+      </p>
+
+    </section>
+
+    <section class="back-btn">
+      <div class="process-back-btn"><a href="process.html" class="process-back-btn-link">Return to process gallery</a></div>
+     </section>
+     <section class="back-btn" id="back-to-top">
+       <div class="process-back-btn" onclick="topFunction()">Back to top</div>
+      </section>
+
+
+    <!-- burger menu -->
+  <script>
+  	function openNav() {
+  			document.getElementById("navbar").style.width = "100%"
+  			document.getElementById("body").style.overflow = "hidden";
+  			document.getElementById("navbar").style.overflow = "scroll";
+  		}
+
+  	function closeNav() {
+  			document.getElementById("navbar").style.width = "0%";
+  			document.getElementById("body").style.overflow = "scroll";
+  			document.getElementById("navbar").style.overflow = "hidden";
+  		}
+  </script>
+
+  <!-- Back to top button -->
+  <script>
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+</body>
+
+</html>

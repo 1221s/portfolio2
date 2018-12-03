@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave|Questrial|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" media="screen and (max-device-width: 600px)" href="../style.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 601px)" href="../styledesktop.css">
+
+    <meta charset="utf-8">
+    <title>1221s: Blog</title>
+    <!-- FAVICON -->
+    <link rel="icon"
+      type="image/png"
+      href="favicon.png">
+    <!-- REMEMBER TO INSERT META TAGS -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous" defer>
+      </script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../script.jscript" defer>
+    </script>
+
+  </head>
+
+<body id="body">
+
+
+<div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
+<header id="header">
+  <section id="mainWrapperHeaderSmall">
+          <div id="burger1" onclick="BurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+          <div id="burger2" onclick="hideBurgerMenu()">
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+              <div class="burgerLine"></div>
+          </div>
+
+      <div id="burgerMenu">
+          <ul>
+            <li id="mobilePortfolioLink"> <a href="../portfoliomob.html"><h2>Portfolio</h2></a> </li>
+            <li id="desktopHomeLink"> <a href="../index.html"><h2>Home</h2></a> </li>
+            <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
+            <li> <a href="../about.html"><h2>About Me</h2></a> </li>
+            <li> <a href="../blog.html"><h2>Process Blog</h2></a> </li>
+          </ul>
+      </div>
+
+    <div id="logo1"> <a href="../index.html">
+      <span class="headerText"><p>1221s</p></span>
+      </a>
+    </div>
+
+    </section>
+</header>
+
+
+<!-- page content -->
+<section class="process-page-container">
+  <h1 class="header-process">Motion Graphics</h1>
+  <section class="intro">
+    Today we had our first lesson in motion graphis, and it was a blast - the limits are endless!<br>
+    The follow-along (monkey see, monkey do) style exersize at the start of the lesson made me feel like I had a much better grasp of the program than before and had me toying around with lights and the camera as well as making the animations more dynamic. I tried to emulate the 'slides' of the logo sliding up slightly, as if theyre peeking over an edge to see if theyre in the clear, then rushing to the top as well as a camera that slowly zoomed out from where it first emerged, then panning around the scene until the whole logo is revealed.<br><br>
+    This was my result of the first exersize:<br><br>
+    <iframe width="560" height="315" src="videos/uclrender.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe><br>
+
+    <br>
+    Consequently I was piqued to continue developing my skills in motion graphics, but i had my sights set on something much more interesting than panning a camera around an animated logo.
+    <br>My big interest? Particles.<br><br>
+
+    But before I could begin toying around with particles, I needed a logo of my own, something I could use in the future. So, opening Adobe Illustrator, I cracked my brain's imaginary knuckles and rolled up my already rolled up sleeves a little further, and set to work.
+    <br>Unsurprisingly, with my very little research and generally tight time schedule (as my brain continued shouting at me to just get to the fun stuff already), it turned out mediocre at best.
+    <br>I wanted something round, something with my name (1221s) on it, as well as something ambiguous. Because I pride myself with being very versatile and dont have a defined image, I wanted it to be up to people's interpretations. The one thing I did want to make sure of was that it contained my primary color: Orange, the one definite part of my image that has not changed over the years.
+    <br>Lo an behold, it ended up being entirely orange - go figure, I like orange.<br>
+    <br><br>Here's my end result:<br>
+    <img src="images/mograph-logo.png" alt="picture-of-logo" id="mograph-logo"><br><br>
+    I've since gotten comments that it looked like the body of a honeybee, a beehive, an airballoon and a strange type of dogtag. I enjoy that it can be interpreted so differently.
+
+    <br><br>But by now I was ready, I had opened cinema4D, closed down unused tabs in chrome so there was plenty of space to look for tutorials, saved the files in all the right formats and imported the graphic.
+    <br>And imediately hit my first issue: the hole in the lower part of the logo didn't transfer properly. Essentially the 'extrude' of which I had made my logo a child, extruded over the hole.
+    <br>Back to Illustrator I went to just plain delete it so I could make a circle spline in C4D and have the spline mask subtract it.
+    <br>My initial thought was to make the logo be showered in balls, bouncing off the ground and going everywhere. <br><br>Essentially, I wanted my logo to feel like this:
+    <br><br><img src="images/mccree.jpg" alt="picture-of-logo" id="mograph-logo"><br>
+
+    <br>And in the middle of that I thought; "Who doesnt like a little snazzy animation"
+
+    <br><br>This was my first attempt:<br><br>
+    <iframe width="560" height="315" src="videos/lockettest1.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+
+    <br><br>As you can probably tell, this isnt ideal. The balls go flying everywhere and whether thats due to the animation of the logo or if its their self-collisions I had no idea at the time. On another topic, the composition looked tacky and wasnt very catching. So I decided to make it lie down, as though it is imbedded in the ground. This would also give more focus to the balls.
+    <br>And from this point my focus was on: Why do my balls go flying everywhere.<br>
+    <br>I tried again.<br><br>
+    <iframe width="560" height="315" src="videos/lockettest2.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+    <br><br>And again<br><br>
+    <iframe width="560" height="315" src="videos/lockettest3.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+    <br><br>And again.<br><br>
+    <iframe width="560" height="315" src="videos/lockettest4.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+
+    <br><br>No matter what I tried, my balls were simply terrified of their own existence and kept deciding to hijack straight outta the frame.
+    <br>Then I watched some tutorials, took a breather, and when I came back, I gave up on my dream of making them little blobs, removing the 'soft body' simulation tag, and replaced it with a 'rigid body' tag.
+    <br>Imediately my renders became much quicker, my editor was actually showing the balls moving instead of a slideshow moving at 5 frames per hour and most importantly, my balls had learned to love each other, nestling in close and finally looking somewhat like the ballpit I had envisioned.
+    <br><br><iframe width="560" height="315" src="videos/lockettest6.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+
+    <br><br>Then came the next issues: My 'bowl' which I was trying to use to keep the balls inside the frame was making a sort of invisible lid. Watched some more tutorials, pulled out some more hair, and found out that inside the 'collider body' tag i had assigned to it, I needed to change it to a 'static mesh'.
+    <br><iframe width="560" height="315" src="videos/lockettest14.mp4" frameborder="0" allowfullscreen class="video-grid-small-vid" controls></iframe>
+
+    <br><br>Finally, my balls were happy in the bowl, covering the logo.
+
+    <br><br>Next up I played around with materials, lighting and the mass of the balls, until I arrived at my final result:
+    <br>INSERT VIDEO.
+
+    <br><br>In the future, i'd like to learn more about particle effectors, creating a maelstrom and in the end exploding the balls
+    - but thats all food for another day.
+
+
+
+
+
+
+
+</section>
+
+  <p class="main-text-process">
+    <p class="underlined-process">
+
+  </p>
+
+</section>
+
+<!-- buttons at the bottom-->
+<section class="back-btn">
+  <div class="process-back-btn"><a href="process.html" class="process-back-btn-link">Return to process gallery</a></div>
+ </section>
+ <section class="back-btn" id="back-to-top">
+   <div class="process-back-btn" onclick="topFunction()">Back to top</div>
+  </section>
+
+
+<!-- burger menu -->
+<script>
+function openNav() {
+    document.getElementById("navbar").style.width = "100%"
+    document.getElementById("body").style.overflow = "hidden";
+    document.getElementById("navbar").style.overflow = "scroll";
+  }
+
+function closeNav() {
+    document.getElementById("navbar").style.width = "0%";
+    document.getElementById("body").style.overflow = "scroll";
+    document.getElementById("navbar").style.overflow = "hidden";
+  }
+</script>
+
+<!-- Back to top button -->
+<script>
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+</body>
+
+</html>
