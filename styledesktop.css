@@ -590,6 +590,40 @@ h3 {
   margin-top:70px;
 }
 
+.proj1Img {
+  width:45%;
+  height:100%;
+  margin-right:10px;
+  float:left;
+  padding-top:30px;
+}
+
+.blogPostImgBox {
+  display:block;
+  width:100%;
+  float:none;
+    overflow:hidden;
+}
+.blogPostTextProj1 {
+  min-width:100vw;
+  float:none;
+}
+.proj1ImgBig {
+  display:block;
+  padding-top:50px;
+  padding-bottom:50px;
+  max-width:80%;
+  margin:auto;
+}
+
+.proj1ImgSmall {
+  display:block;
+  width:30%;
+  float:right;
+  padding-top:50px;
+  margin-right:20px;
+}
+
 /* Image GRID INDEX */
 
 #imageGridIndex {
