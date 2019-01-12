@@ -54,7 +54,8 @@ h3 {
 /* HEADER */
 
 #header {
-  position:relative;
+  position:fixed;
+  top:0;
   max-height: 400px;
   min-height:300px;
   z-index:20;

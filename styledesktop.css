@@ -2,7 +2,6 @@
 * {
   box-sizing: border-box;
   color:white;
-  font-family:'Questrial', sans-serif;
   color:#ffffff;
   text-decoration:none;
   list-style:none;
@@ -11,6 +10,7 @@
   font-size:15px;
   margin:0;
   padding:0;
+  overflow:hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -31,6 +31,29 @@ h3 {
   font-family:'Knewave', sans-serif;
   font-size:20px;
   color:#558157;
+}
+p {
+
+  font-family:'Questrial', sans-serif;
+}
+
+a p, a i{
+  color:#f37b36;
+  font-size:1em;
+  text-decoration:underline;
+  font-weight:bold;
+}
+a i {
+text-decoration:none;
+padding-left:3px;
+}
+
+.rightAlignedTxt {
+  float:right;
+}
+
+.opaqueTxt {
+  opacity:0.5;
 }
 
 
@@ -56,7 +79,6 @@ h3 {
   position:relative;
   height:50px;
   z-index:20;
-  margin-bottom:20px;
 }
 
 #mainWrapperHeader {
@@ -287,9 +309,14 @@ h3 {
 
 /* image gallery slider NETFLIX */
 
+
 .indexHeader {
+  margin-bottom:5px;
+  margin-left:5vw;
+}
+.tiptxt {
+  margin-left:5vw;
   margin-bottom:20px;
-  margin-left:5%;
 }
 
 .wrapper {
@@ -308,6 +335,7 @@ h3 {
 }
 
 .bigSliderWrapper {
+  margin-top:170px;
   position:inherit;
   display:block;
 }
@@ -485,61 +513,99 @@ h3 {
 }
 
 /* ABOUT ME CSSS */
-
-#aboutMeBigWrapperBig {
-  position:relative;
-  height:100%;
-  margin-bottom:500px;
-}
-
-.aboutMeWrapper {
-  position:relative;
-  margin-top:20px;
-  width:90%;
-}
-
-.aboutMeWrapper h1 {
-  right:10;
-  margin-bottom:20px;
-  text-align:left;
-  margin-left:5%;
-}
-
-#selfie  {
-  position:absolute;
-  width:30%;
-  margin-left:5%;
-  margin-top:10px;
-  border-radius:20px;
-  transform:rotate(10deg);
-  float:left;
-  margin-right:50px;
-
-  box-shadow:30px 30px 5px rgba(64, 64, 64, 0.5);
-}
-
- .aboutMeTextWrapper {
-  position:relative;
-  margin-top:20px;
-  width:40%;
+.aboutWrapper {
+  min-height:60vh;
+  padding-left:5vw;
+  padding-top:5vh;
+  background-color:#404040;
   margin-bottom:100px;
-  margin-left:40%;
 }
 
-.aboutMeTextWrapper p{
-  margin-bottom:30px;
+.aboutSelfie {
+  position:absolute;
+  width:1200px;
+  height:950px;
+  top:-450px;
+  left:-550px;
+  border-radius:50%;
+  border: 25px solid #404040;
+  z-index:1;
 }
 
-.proficienciesHeader {
-  margin-left:5%;
-  margin-top:20px;
-  margin-bottom:50px;
-  text-align:center;
+.aboutTextWrapper {
+  padding-left:45vw;
+  padding-right:5vw;
+  z-index:2;
+  height:
 }
-.proficiencies {
-  width:150px;
-  margin:0;
+
+.aboutTextWrapper p {
+  margin-bottom:10px;
 }
+.belowToDanish {
+  margin-top:30px;
+}
+.toDanish {
+  position:absolute;
+  left:1000px;
+  top:60px;
+
+}
+.toDanishArrow {
+  padding-left:5px;
+  font-size:5em;
+  opacity:0.2;
+}
+
+/* HERE STARTS proficiencies */
+.proficienciesWrapper {
+  position:absolute;
+  width:45vw;
+  max-width:45vw;
+  min-height:30vh;
+  margin-left:45vw;
+  margin-top:5vh;
+  padding: 2vw;
+
+  background-color:#515151;
+  border-radius:30px;
+
+}
+
+.proficienciesInnerWrapper {
+  min-height:150px;
+  width:100%;
+  padding-left:2vw;
+}
+
+.proficienciesInnerWrapper i {
+  min-width:100px;
+  max-width:100px;
+  height:90px;
+  padding:10px;
+font-size:2em;
+margin:auto;
+margin-right:20px;
+margin-top:20px;
+color: #659157;
+text-align:center;
+
+border: solid 2px #659157;
+border-radius:10px;
+}
+
+.proficienciesInnerWrapper i p {
+  margin-top:10px;
+}
+
+.profAlternativeTxt{
+  position:static;
+  width:40%;
+  margin-top:7%;
+  margin-right:10%;
+  float:right;
+}
+
 
 
 /* HERE STARTS BLOG CSS */
@@ -697,27 +763,19 @@ h3 {
 /* FOOTER */
 
 #footer {
-  height:400px;
+  min-height:300px;
   position:relative;
-  bottom:0;
-  left:0;
-  overflow:hidden;
   clear:both;
-}
-
-#footerBackground {
-  margin-top:10%;
-  height:100%;
   background-color:#659157;
-  transform:skew(0,-5deg);
+  overflow:visible;
 }
 
 #footerContent {
-  position:absolute;
-  top:40%;
-  left:5%;
+  position:relative;
+  left:5vw;
   z-index:2;
   width:50vw;
+  padding-top:5vh;
 }
 
 #footerContent h2 {
@@ -734,16 +792,15 @@ h3 {
 }
 
 #footerIcons {
-  position:absolute;
-  top:70%;
-  left:80%;
+  position:relative;
+  left:5vw;
   width:50%;
-  height:100px;
-  z-index:3;
 }
 
-#footerIcons h2 {
-  margin-bottom:20px;
+#footerIcons i {
+  font-size:3em;
+  text-decoration:none;
+  margin-right:1vw;
 }
 
 .footerIcon {
@@ -751,6 +808,17 @@ h3 {
   height:auto;
   margin-left:10px;
   cursor:pointer;
+}
+.footerSelfie {
+  position:absolute;
+  width:600px;
+  height:500px;
+  border-radius: 80% 0 0 0;
+  border: solid 25px #659157;
+  border-width: 25px 0 0px 25px;
+  z-index:5;
+  right:0;
+  top:-200px;
 }
 
 /* HERE STARTS FRATRICIDE SUBPAGE CSS */
