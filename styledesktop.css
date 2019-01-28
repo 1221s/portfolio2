@@ -4,7 +4,6 @@
   color:white;
   color:#ffffff;
   text-decoration:none;
-  list-style:none;
   box-shadow:none;
   border:none;
   font-size:15px;
@@ -44,12 +43,14 @@ a p, a i{
   font-weight:bold;
 }
 a i {
+display:inline-block;
 text-decoration:none;
 padding-left:3px;
 }
 
 .rightAlignedTxt {
-  float:right;
+  display:block;
+  text-align:right;
 }
 
 .opaqueTxt {
@@ -63,6 +64,7 @@ padding-left:3px;
   width:100%;
   height:100%;
   margin:0;
+  overflow:hidden;
 }
 
 /* GENERAL CSS */
@@ -79,6 +81,8 @@ padding-left:3px;
   position:relative;
   height:50px;
   z-index:20;
+
+overflow:visible;
 }
 
 #mainWrapperHeader {
@@ -88,6 +92,7 @@ padding-left:3px;
   background-color:#404040;
   padding:0;
   margin:0;
+  border-bottom: solid 5px #659157;
 }
 
 #mainWrapperHeaderSmall {
@@ -133,20 +138,24 @@ padding-left:3px;
 
 #burgerMenu {
   display:none;
-  position:absolute;
+  position:fixed;
   width:30vw;
   background-color:#cecccc;
   min-height:200px;
-  z-index:15;
+  z-index:25;
   padding-top:70px;
   padding-bottom:50px;
   padding-left:20px;
   border-radius: 0 0 20px 0;
+  margin-top:50px;
 }
 
 #burgerMenu li {
   width:100%;
   margin-bottom:20px;
+}
+#burgerMenu h2 {
+  color:#404040;
 }
 
 #mobilePortfolioLink {
@@ -166,6 +175,20 @@ padding-left:3px;
   background-color:rgba(64, 64, 64, 0.8);
   z-index:-5;
   opacity:0;
+  transition-duration:1s;
+}
+
+#mainOverlayCommisions {
+  display:block;
+  position:fixed;
+  width:100vw;
+  height:100%;
+  top:0
+  padding:0;
+  margin:0;
+  background-color:rgba(64, 64, 64, 0.8);
+  z-index:1;
+  opacity:1;
   transition-duration:1s;
 }
 
@@ -202,6 +225,7 @@ padding-left:3px;
   font-family:'Audiowide', sans-serif;
   font-size:20px;
   color:#ffffff;
+  text-decoration:none;
 }
 
 /* LOADER LOADING SCREEN  */
@@ -288,23 +312,6 @@ padding-left:3px;
   padding:20px;
   background-color:#f37b36;
   border-radius:15px;
-}
-
-/* back to top BTN */
-
-#backToTopBtn {
-  min-height:280px;
-  min-width:280px;
-  max-height:300px;
-  max-width:300px;
-  padding:30px;
-  padding-top:90px;
-  padding-bottom:60px;
-  text-align:center;
-  border-radius:20px;
-  margin:auto;
-  margin-bottom:200px;
-  background-color:#f37b36;
 }
 
 /* image gallery slider NETFLIX */
@@ -415,102 +422,6 @@ padding-left:3px;
 .ItemOnCommisionsPage{
 }
 
-#previousCommisionsHeader {
-  margin-left:5%;
-}
-
-#commisionPrices {
-  position:relative;
-  width:50%;
-  margin-left:5%;
-  float:left;
-  margin-bottom:50px;
-}
-
-.commisionPriceBox {
-  margin-top:30px;
-  float:left;
-}
-
-.commisionPriceBox h2 {
-  position:absolute;
-  background-color:#404040;
-  padding:20px;
-  right:0;
-  min-width:40%;
-  text-align:right;
-}
-
-.commisionPriceImage {
-  width:100%;
-  float:left;
-  height:auto;
-}
-
-#commisionMeBtn, #tosBtn {
-  position:relative;
-  width:50%;
-  min-height: 100px;
-  margin-left:5%;
-  margin-bottom:50px;
-  background-color:#f37b36;
-  padding:20px;
-  margin-bottom:25px;
-  border-radius:20px;
-  box-shadow:10px 10px 5px rgba(64, 64, 64, 0.5);
-  cursor:pointer;
-}
-
-#commisionButtons {
-  margin-bottom:60px;
-
-}
-
-/* note Box on commisions page */
-
-#noteBox {
-  transition-duration:1s;
-  z-index:6;
-}
-
-.noteBox {
-  position:relative;
-  float:right;
-  width:30%;
-  margin-bottom:100px;
-  right:5%;
-  top:5%;
-  padding:10px;
-
-  background-color:#515151;
-  border-radius:20px;
-
-}
-
-.noteBox p {
-  font-size:1em;
-  margin-bottom:15px;
-}
-
-.sticky {
-  position:sticky;
-  padding:10px;
-  position:fixed;
-  top:30%;
-  width:30%;
-  right:5%;
-
-  background-color:#404040;
-  border-radius:20px;
-
-
-  transition-duration:1s;
-}
-
-.stickyStopped {
-  position:absolute;
-  top:290%;
-}
 
 /* ABOUT ME CSSS */
 .aboutWrapper {
@@ -694,21 +605,21 @@ border-radius:10px;
 
 #imageGridIndex {
   position:relative;
-  width:90%;
-  margin-left:5%;
+  width:100%;
+  margin-left:5vw;
 }
 
 .columnIndex {
-  display:block;
-  width:33%;
+  display:inline-block;
+  width:21vw;
   float:left;
+  margin-right:2vw;
 }
 
 .gridItem {
   position:relative;
   display:block;
   border-radius:5px;
-  margin-right:5%;
   margin-bottom:20px;
   transition-duration:0.5s;
   transition-timing-function: ease-in-out;
@@ -768,6 +679,7 @@ border-radius:10px;
   clear:both;
   background-color:#659157;
   overflow:visible;
+  margin-top:150px;
 }
 
 #footerContent {
@@ -793,8 +705,8 @@ border-radius:10px;
 
 #footerIcons {
   position:relative;
-  left:5vw;
-  width:50%;
+  width:100%;
+  margin-bottom:10px;
 }
 
 #footerIcons i {
@@ -803,12 +715,25 @@ border-radius:10px;
   margin-right:1vw;
 }
 
+.footerEmail {
+  display:inline-block;
+  margin-left:-5px;
+}
+
 .footerIcon {
   max-width:50px;
   height:auto;
   margin-left:10px;
   cursor:pointer;
 }
+
+.footerEmailIcon {
+  margin-right:-10px;
+  cursor:cell;
+}
+
+
+
 .footerSelfie {
   position:absolute;
   width:600px;
@@ -816,7 +741,7 @@ border-radius:10px;
   border-radius: 80% 0 0 0;
   border: solid 25px #659157;
   border-width: 25px 0 0px 25px;
-  z-index:5;
+  z-index:1;
   right:0;
   top:-200px;
 }
@@ -912,7 +837,7 @@ border-radius:10px;
 }
 
 #fratricideText p, #fratricideText h1 {
-  font-size: 10px;
+  font-size: 1.1em;
 }
 
 .closeLightBox {
@@ -980,85 +905,325 @@ border-radius:10px;
   margin-bottom:0;
 }
 
-
-/* MEDIA QUERY */
-
-@media screen and (min-width: 1400px){
-  .portfolioImg {
-    min-width:20vw;
-    max-width:21vw;
-  }
-  .imageGallerySliderWrapper {
-    position:relative;
-    margin-left:5%;
-    margin-bottom:50px;
-    min-width:250vw;
-  }
-
-  .myGallerySlides {
-    margin-right:3%;
-  }
-  .leftArrowCommisionGallery, .rightArrowCommisionGallery {
-    top:40%;
-  }
-
-#footerContent {
-  width:20%;
-  right:5%;
-  left:75%;
+/* HERE STARTS ABOUT ME PAGE CSS */
+.aboutBigWrapper {
+  position:relative;
+  width:100%;
+  overflow:hidden;
 }
 
-#footer {
-  height:500px;
+.aboutGeneralBoxWrapper {
+  min-height:50vh;
 }
 
-#footerIcons {
-  top:60%;
-  left:5%;
+/* ABOUT PAGE IMAGES */
+.aboutSelfieLeft {
+  position:absolute;
+  width:20vw;
+  height:30vh;
+  border-radius:30px;
+  top:18vh;
+  z-index:2;
+  float:left;
+  left: 5vw;
 }
 
-.footerIcon {
-  max-width:80px;
+.buzzwords {
+  position:absolute;
+  width:30vw;
+  top:50vh;
+  z-index:2;
 }
-.noteBox p {
+
+/*ABOUT PAGE GENERAL INFO */
+.AboutPageHeader h2{
+  font-size:3em;
+  text-align:center;
+  margin-top:5vh;
+  margin-bottom:2vh;
+
+}
+
+.aboutGeneralTextWrapper {
+  position:relative;
+  width:100%;
+  min-height:500px;
+  padding-left:30vw;
+
+  z-index:1;
+  background-color:#659157;
+
+}
+
+.aboutGeneralTextWrapperList, .aboutPageProficienciesList {
+  margin-top:5vh;
+  width:60vw;
+}
+
+.aboutGeneralTextWrapperListItem {
+  display:block;
+  margin-bottom:15px;
+  border: solid 5px white;
+  border-width: 0 0 1px 0px;
+}
+
+.aboutGeneralTextWrapperListItem p, .aboutPageProficienciesListItem p {
+  display:inline-block;
+}
+.phonetic {
+  margin-left:15px;
+  opacity:0.8;
+}
+.AboutGeneralBoxBold, .aboutPageProficienciesBold {
+  margin-right:10px;
+  font-weight:bold;
+}
+.AboutGeneralBoxBold i {
+  display:inline-block;
+  margin-bottom:-3px;
+  margin-right: 5px;
+}
+
+/* ABOUG PAGE PROFICIENCIES */
+.aboutPageProficiencies {
+  position:relative;
+  width:60vw;
+  min-height:200px;
+  margin-left:30vw;
+  margin-top:-125px;
+  padding-bottom:25px;
+  z-index:2;
+  border-radius:20px;
+
+  background-color:#515151;
+}
+
+.aboutPageProficienciesList {
+  width:80%;
+  margin-top:1vh;
+  margin-left:5vw;
+}
+
+.aboutPageProficienciesListItem {
+  width:50%;
+  float:left;
+}
+
+.aboutPageProficienciesWrapper h3, .aboutPageProficienciesWrapper h2 {
+  margin-left:5vw;
+  margin-top:10px;
+}
+
+.proficienciesMiniList {
+  margin-left:2vw;
+}
+
+.buzzwords p{
+  max-width:60%;
+}
+
+/* ABOUT PAGE EXPERIENCE PART */
+.aboutPageExperience {
+  width:90vw;
+  padding-left: 5vw;
+  padding-top:1vh;
+
+}
+.aboutPageExperience h1 {
+  margin-left: 22vw;
+  margin-bottom: 30px;
+  margin-top:20px;
+  font-size:2.5em;
+}
+
+.aboutPageExperience h2 {
+  margin-bottom:15px;
+}
+
+.aboutPageExperienceCenter {
+  margin-left: 15vw;
+  margin-top:5vh;
+}
+
+.xpListRow {
+  width: 30vw;
+  float:left;
+  padding-right: 50px;
+}
+
+.xpListRowRight {
+  width:40vw;
+  border: 1px solid white;
+  border-width: 0 0 0 1px;
+  padding-left: 150px;
+}
+
+.xpList li {
+  margin-bottom:5vh;
+}
+
+.xpSmallTxtList{
+  margin-left:1vw;
+  margin-top:5px;
+  text-decoration:inherit;
+  list-style:disc;
+}
+
+.xpSmallTxtList li {
+  margin-bottom:5px;
+  padding-bottom:3px;
+  padding-top:10px;
+  border: 1px solid white;
+  border-width: 0 0 1px 0;
+}
+.xpSmallTxt {
+  margin-top:20px;
+}
+
+.xpItalicTxt {
+  font-style:italic;
+}
+
+/* Here starts commision INFORMATION css */
+
+.commisionsBigWrapper {
+  width:100vw;
+  margin-top:0;
+  margin-bottom:30vh;
+}
+
+#commisionInformationBox {
+  position:fixed;
+  width:60vw;
+  top:70vh;
+  left: 20vw;
+  padding:5vw;
+  padding-bottom:1vh;
+  padding-top: 20px;
+  background-color: #404040;
+  border-radius: 10vh;
+  border: 5px solid #659157;
+
+  transition-duration: 0.3s;
+  transition-delay: 0.2s;
+  transition-timing-function:ease-in;
+  z-index:5;
+}
+
+.commisionInfoWrapper h1, .commisionInfoWrapper h2 {
+  text-align:center;
+}
+.commisionInfoWrapper h2 {
+  margin-top: 10px;
+  text-align:left;
+}
+
+.commisionInfoWrapper i {
   font-size:2em;
+  margin-left:48%;
+  margin-top:2vh;
 }
-.noteBox h3 {
+
+.commisionsTypesWrapper {
+  background-color: #659157;
+  padding-left:5vw;
+  padding-top:5vh;
+  padding-bottom:6vw;
+}
+.commisionTypes {
+  margin-top:20px;
+  margin-bottom:10px;
+  margin-left:4%;
+}
+
+.commisionTypes li {
+  width:33%;
+  float:left;
+  margin:auto;
+}
+
+.commisionTypes li img {
+  width:70%;
+  height:auto;
+  border-radius:10%;
+  margin-bottom:15px;
+}
+
+.commisionTypes p {
+  text-align:center;
+  font-size: 2em;
+  font-weight:bold;
+  margin-right:140px;
+}
+
+.commisionsInfoHeader {
   font-size:2em;
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:10px;
+  color:white;
+}
+.commisionsTypesWrapper h2 {
+  text-align:center;
+  margin-right:60px;
+}
+.addInfo {
+  width:50vw;
+  margin-left:10vw;
+  margin-top:10vh;
+}
+.addInfo p {
+  margin-bottom:10px;
 }
 
-.wrapperSmall {
-  margin-top:200px;
+.addInfo h2 {
+  text-align:left;
+  margin-bottom:10px;
 }
 
-#selfie {
-  margin-top:70px;
-  min-width:600px;
-  margin-left:10%;
-}
-.aboutMeTextWrapper {
-  margin-top:150px;
-  width:40%;
-  margin-left:50%;
-}
-.aboutMeTextWrapper p {
-  font-size:30px;
+/* Commision button */
+.commisionBtn a {
+  display:block;
+  position:absolute;
+  left:30vw;
+  top:85vh;
+
+  width:40vw;
+  min-height:100px;
+  background-color: #F37B36;
+  border-radius:25px;
+  border: 10px solid #659157;
+
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+
+  text-align:center;
+  padding-top:20px;
+  font-family:'Questrial', sans-serif;
 }
 
-.blogPostBox {
-  width:22%;
-  margin-bottom:100px;
-
-}
-#fratricideText p, #fratricideText h1 {
-  font-size: 20px;
-}
-#fratricideLightBox {
-  height:80vh;
+/* Old commisions archive bottom of commisions info page */
+.oldCommisions {
+  width:80vw;
+  margin:auto;
+  margin-top:5vh;
 }
 
-@media screen and (max-width: 1100px){
-#fratricideText {
+.oldCommisionsList {
+ width:100%;
+
 }
 
+.oldCommisions h1 {
+  margin-bottom:2vh;
+}
+
+.oldCommisionsList li {
+  width:18%;
+  min-height: 300px;
+  margin-right:2%;
+  margin-bottom:20px;
+  float:left;
+  background-color: #404040;
 }

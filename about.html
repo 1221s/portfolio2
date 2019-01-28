@@ -28,9 +28,18 @@
 
 </head>
   <body id="body">
+
+
+    <!-- HERE STARTS THE LOADER -->
+
+    <div class="loader" id="loader">
+      <img src="img/loader.gif" alt="this is the where the loading icon was supposed to be" class="loaderGif">
+      <div class="loadingIcon"></div>
+    </div>
+
     <div id="mainOverlayBurger" onclick="hideBurgerMenu()"></div>
     <header id="header">
-      <section id="mainWrapperHeaderSmall">
+      <section id="mainWrapperHeader">
               <div id="burger1" onclick="BurgerMenu()">
                   <div class="burgerLine"></div>
                   <div class="burgerLine"></div>
@@ -43,22 +52,22 @@
                   <div class="burgerLine"></div>
               </div>
 
-          <div id="burgerMenu">
-              <ul>
-                <li id="mobilePortfolioLink"> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
-                <li id="desktopHomeLink"> <a href="index.html"><h2>Home</h2></a> </li>
-                <!--  <li> <a href="commisions.html"><h2>Commisions</h2></a> </li> -->
-                <li> <a href="about.html"><h2>About Me</h2></a> </li>
-                <li> <a href="blog.html"><h2>Process Blog</h2></a> </li>
-              </ul>
-          </div>
 
-        <div id="logo1"> <a href="index.html">
-          <span class="headerText"><p>1221s</p></span>
-          </a>
+        <div id="logo1">
+          <a href="index.html"> <span class="headerText"><p>1221s</p></span></a>
         </div>
 
         </section>
+
+        <div id="burgerMenu">
+            <ul>
+              <li id="mobilePortfolioLink"> <a href="portfoliomob.html"><h2>Portfolio</h2></a> </li>
+              <li id="desktopHomeLink"> <a href="index.html"><h2>Home</h2></a> </li>
+            <li> <a href="commisions.html"><h2>Commision Information</h2></a> </li>
+            <li> <a href="commisionme.html"><h2>Commision Me</h2></a> </li>
+              <li> <a href="about.html"><h2>About Me</h2></a> </li>
+            </ul>
+        </div>
     </header>
 
     <div id="peekaboo" addEventListener="click">
@@ -66,61 +75,289 @@
         <a href="https://www.tumblr.com/dashboard/blog/1221sartblog" id="peekabooTumblrLink"><img id="peekabooTumblr" src="img/icons/tumblr.png"></a>
         <a href="https://www.instagram.com/1221sart/" id="peekabooInstagramLink"><img id="peekabooInstagram" src="img/icons/instagram.png"></a>
     </div>
-<section id="aboutMeBigWrapperBig">
-<section class="aboutMeWrapper">
-  <span> <h1>I am 1221s</h1> </span>
-    <img src="img/selfie.jpg" alt="a picture of me was supposed to be here, clearly that is not the case" id="selfie">
-      </section>
-    <section class="aboutMeTextWrapper">
-    <span> <h3>Heyo!</h3>
-     <p>My name is Nanna Christina Valbjørn, and I'm a digital artist and multimedia designer. </p>
-      <p>I'm from Fünen, Denmark and 21 years old, which might have meant that I'm inexperienced,
-        but in reality it means I'm just that bit more ready to learn.</p></span>
-        <span> <h3>Previous Experience</h3> </span>
-        <span> <p>I've worked mostly with private clients
-                  in character design and illustration.</p>
-                <p>I have in revent years delved into
-                  website development as well as design of visual
-                  identities, which is among other things what led
-                  to the creation of this site.</p> </span>
+
+
+
+<!-- HERE STARTS ACTUAL CONTENT -->
+
+<section class="aboutBigWrapper">
+
+  <!-- TWO BIG IMAGES IN THE TOP -->
+  <img src="img/tallfriendsmol.jpg" alt="this was supposed to be a selfie" class="aboutSelfieLeft">
+
+  <div class="aboutGeneralBoxWrapper">
+
+    <span class="AboutPageHeader"> <h2>"You are what you create"</h2> </span>
+<!-- GENERAL INFORMATION -->
+    <div class="aboutGeneralTextWrapper">
+
+
+      <ul class="aboutGeneralTextWrapperList">
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Full Name:</p>
+          <p>Nanna Christina Valbjørn <p class="phonetic">[nana  kʁɛsdi:na   væ:lbjœɒn]</p> </p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">AKA:</p>
+          <p>1221s, Fiamma or Fiamma1221</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Proffessional title:</p>
+          <p>Multimedia designer, Illustrator and Webdeveloper</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Date of Birth:</p>
+          <p>22nd of July 1997</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Gender:</p>
+          <p>Female (She/Her)</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Country of Birth:</p>
+          <p>Denmark</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold">Current city of residence:</p>
+          <p>Odense, DK</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold"><i class="fas fa-envelope"></i> Email:</p>
+          <p>contact@1221s.com</p>
+        </li>
+
+        <li class="aboutGeneralTextWrapperListItem">
+          <p class="AboutGeneralBoxBold"><i class="fas fa-phone"></i> Phone:</p>
+          <p>+45 81188565</p>
+        </li>
+      </ul>
+
+      <span>
+        <h2></h2>
+
+      </span>
+    </div>
+
+  </div>
+
+    <section class="aboutPageProficiencies">
+      <div class="aboutPageProficienciesWrapper">
+        <span> <h3>Skills</h3> </span>
+
+        <ul class="aboutPageProficienciesList">
+
+          <li class="aboutPageProficienciesListItem">
+            <p class="aboutPageProficienciesBold">Adobe CC :</p>
+              <ul class="proficienciesMiniList">
+                <li>
+                  <p class="aboutPageProficienciesBold">Photoshop :</p>
+                  <p>Adept</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">Indesign :</p>
+                  <p>Profficient</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">Illustrator :</p>
+                  <p>Moderate profficient</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">Premiere Pro :</p>
+                  <p>Adept</p>
+                </li>
+              </ul>
+
+          </li>
+
+          <li class="aboutPageProficienciesListItem">
+            <p class="aboutPageProficienciesBold">Programming Languages:</p>
+              <ul class="proficienciesMiniList">
+                <li>
+                  <p class="aboutPageProficienciesBold">HTML 5 :</p>
+                  <p>Highly Profficient</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">CSS 3 :</p>
+                  <p>Profficient</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">Javascript :</p>
+                  <p>Moderate profficient</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">Python :</p>
+                  <p>Beginner</p>
+                </li>
+                <li>
+                  <p class="aboutPageProficienciesBold">C# (Unity) :</p>
+                  <p>Beginner</p>
+                </li>
+              </ul>
+
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+
+    </section>
+
+    <!-- Experience -->
+
+
+    <section class="aboutPageExperience">
+      <span class="buzzwords">
+        <h2>I am . . .</h2>
+        <p>Highly curious, open and warm.</p>
+        <p> My versatility, both in terms of skills and my ability to adapt to changing work environments allows me to fit in amongst almost any crowd.
+            It also allows me to be constantly learning; Jack of all trades, (hopefully) master of none.</p>
+       </span>
+
+       <section class="aboutPageExperienceCenter">
+
+        <span> <h1>Experience</h1> </span>
+
+        <div class="xpListRow">
+        <span> <h2>Work</h2> </span>
+        <ul class="xpList">
+          <li>
+            <p class="xpItalicTxt">1 Jan 2011 - Present</p>
+            <h3>Freelance Illustrator</h3>
+            <p>Self-employed, Haarby (Denmark)</p>
+
+
+            <p class="xpSmallTxt">Important Activities and areas of responsibility:</p>
+            <ul class="xpSmallTxtList">
+              <li class="xpSmallTxtListItem"> <p>Dealing proffessionally with clients from all over the world.</p></li>
+              <li class="xpSmallTxtListItem"><p>Developing tangible concepts from vague ideas.</p></li>
+              <li class="xpSmallTxtListItem"><p>Optimizing and understanding the pricing of digital goods.</p></li>
+              <li class="xpSmallTxtListItem"><p>Systemizing a commision pipeline.</p></li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="xpItalicTxt">1 Aug 2013 - 30 Jun 2016</p>
+            <h3>Salesassistant</h3>
+            <p>Superbrugsen, Haarby (Denmark)</p>
+            <p class="xpSmallTxt">Important Activities and areas of responsibility:</p>
+
+            <ul class="xpSmallTxtList">
+              <li class="xpSmallTxtListItem"> <p>Customer service.</p></li>
+              <li class="xpSmallTxtListItem"><p>Dealing tactfuly with complaints.</p></li>
+              <li class="xpSmallTxtListItem"><p>Part of organizing schedules.</p></li>
+              <li class="xpSmallTxtListItem"><p>Part of an effective team.</p></li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="xpItalicTxt">1 Apr 2014 - 30 May 2014</p>
+            <h3>Graphics Assistant</h3>
+            <p>Chichester College, Chichester (United Kingdom)</p>
+            <p class="xpSmallTxt">Important Activities and areas of responsibility:</p>
+            <ul class="xpSmallTxtList">
+              <li class="xpSmallTxtListItem"> <p>Specifically selected to be part of their graphics team.</p></li>
+              <li class="xpSmallTxtListItem"><p>Adapting to a proffessional office environment.</p></li>
+              <li class="xpSmallTxtListItem"><p>Promoting their programme to schools in China.</p></li>
+              <li class="xpSmallTxtListItem"><p>Dealing with academic criticism.</p></li>
+              <li class="xpSmallTxtListItem"><p>Learning to follow a dynamic pipeline.</p></li>
+            </ul>
+          </li>
+
+          <li>
+            <p class="xpItalicTxt">1 Jan 2015 - 25 Jan 2015</p>
+            <h3>Animation Intern</h3>
+            <p>Ordbogen, Odense (Denmark)</p>
+            <p class="xpSmallTxt">Important Activities and areas of responsibility:</p>
+            <ul class="xpSmallTxtList">
+              <li class="xpSmallTxtListItem"> <p>Experience with following a dynamic production pipeline.</p></li>
+              <li class="xpSmallTxtListItem"><p>Learning to effectively use criticism.</p></li>
+              <li class="xpSmallTxtListItem"><p>Animation and graphics development.</p></li>
+              <li class="xpSmallTxtListItem"><p>Adapting to working in a proffessional office environment.</p></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="xpListRow xpListRowRight">
+      <span> <h2>Education</h2> </span>
+      <ul class="xpList">
+
+        <li>
+          <p class="xpItalicTxt">5 Feb 2018 - present</p>
+          <h3>Multimedia Design</h3>
+          <p>University College Lillebælt, Odense (Denmark)</p>
+          <p class="xpSmallTxt">Here I developed the following skills:</p>
+          <ul class="xpSmallTxtList">
+            <li class="xpSmallTxtListItem"> <p>The ability to effectively work in a team.</p></li>
+            <li class="xpSmallTxtListItem"><p>Understanding and reflecting academic criticism.</p></li>
+            <li class="xpSmallTxtListItem"><p>Advanced skills in 3d, 2d and film production software.</p></li>
+            <li class="xpSmallTxtListItem"><p>Experience in user-testing and quality-assurance.</p></li>
+          </ul>
+        </li>
+        <li>
+          <p class="xpItalicTxt">18 Aug 2015 - 23 Jun 2017</p>
+          <h3>HF Diploma</h3>
+          <p>Hf og VUC Fyn, Odense (Denmark)</p>
+          <p class="xpSmallTxt">Average grade: 10,5 (Scale: 7-scale)</p>
+        </li>
+
+        <li>
+          <p class="xpItalicTxt">25 Aug 2014 - 20 Aug 2015</p>
+          <h3>Digital Media Base Year Diploma</h3>
+          <p>Syddansk Erhvervskole, Odense (Denmark)</p>
+          <p class="xpSmallTxt">During this year I developed skills in various 3d and film production software, as well as obtained a basic understanding of design and programming.</p>
+        </li>
+
+        <li>
+          <p class="xpItalicTxt">DATE</p>
+          <h3>JOB TITLE</h3>
+          <p>Place of work</p>
+          <p class="xpSmallTxt">Important Activities and areas of responsibility:</p>
+          <ul class="xpSmallTxtList">
+            <li class="xpSmallTxtListItem"> <p>Experience with following a dynamic production pipeline.</p></li>
+            <li class="xpSmallTxtListItem"><p>Learning to effectively use criticism.</p></li>
+            <li class="xpSmallTxtListItem"><p>Animation and graphics development.</p></li>
+            <li class="xpSmallTxtListItem"><p>Adapting to working in a proffessional office environment.</p></li>
+          </ul>
+        </li>
+
+
+      </ul>
+    </div>
+    </section> </section>
+
+
 </section>
 
-
-<section class="wrapper wrapperSmall">
-<section class="bigSliderWrapper">
-<h1 class="proficienciesHeader">I am profficient in:</h1>
-<div class="leftArrowCommisionGallery shortSliderArrowLeft" id="leftArrowCommisionGallery" onclick="jumpScrollBack()"> <i class="fa fa-angle-left"></i> </div>
-<div class="rightArrowCommisionGallery shortSliderArrowRight" onclick="jumpScroll()"> <i class="fa fa-angle-right"></i> </div>
-<section id="commisionGalleryWrapperBig">
-<div class="imageGallerySliderWrapper">
-<div class="myGallerySlides proficiencies" id="bidirectionalImage1">
-  <img src="img/icons/ps.png" alt="a image was supposed to be here" class="portfolioImgMob">
-  <p>Photoshop CC</p>
-  <p></p>
-</div>
-
-<div class="myGallerySlides proficiencies" id="bidirectionalImage2">
-  <img src="img/icons/ai.png" alt="a image was supposed to be here" class="portfolioImgMob">
-  <p>Illustrator CC</p>
-  <p></p>
-</div>
-
-<div class="myGallerySlides proficiencies" id="bidirectionalImage3">
-  <img src="img/icons/xd.png" alt="a image was supposed to be here" class="portfolioImgMob">
-  <p>Experience Design CC</p>
-  <p></p>
-</div>
-
-<div class="myGallerySlides proficiencies" id="bidirectionalImage4">
-  <img src="img/icons/id.png" alt="a image was supposed to be here" class="portfolioImgMob">
-  <p>Indesign CC</p>
-  <p></p>
-</div>
-
-</div></section></section></section>
+<!-- bottom selfie -->
+<footer id="footer">
+<section id="footerContent">
+<h2>Thank you for taking a look at my portfolio!</h2>
+<p>I'm still new to webdevelopment so there might be a few bugs here and there. <br />If you find any, please shoot me a message on my email or on any of my social media.</p>
+<section id="footerIcons">
+  <a href="https://www.tumblr.com/dashboard/blog/1221sartblog"><i class="fab fa-twitter-square"></i></a>
+  <a href="https://www.instagram.com/1221sart/"><i class="fab fa-instagram"></i></a>
+  <i class="fas fa-envelope footerEmailIcon"></i><h2 class="footerEmail">: Contact@1221s.com</h2>
 
 </section>
+<p>I'd really appreciate it since I'd like to give visitors the best experience possible!</p>
+</section>
 
+<div class="footerSelfieWrapper">
+<img src="img/selfie2.jpg" alt="" class="footerSelfie">
+</div>
+</footer>
 
   </body>
 </html>

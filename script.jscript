@@ -13,7 +13,14 @@ function loadPage(){
   document.getElementById('loader').style.opacity="0";
 
   document.getElementById('body').style.overflow="auto";
+  document.getElementById('commisionInformationBox').addEventListener("click", function(){commisionInformationBox()}, true);
   console.log('hi loadpage');
+
+  if(document.getElementById('commisionInfoWrapper').style.top="-20px"){
+    document.getElementById('mainOverlayBurger').style.display="block"
+  } else {
+    document.getElementById('mainOverlayBurger').style.display="none"
+  }
 };
 
 //BURGER
@@ -38,65 +45,6 @@ function hideBurgerMenu(){
 }
 
 
-document.getElementById('peekaboo').addEventListener("click", function(){peekabooOpen()}, true);
-document.getElementById('peekabooCloseArrow').addEventListener("click", function(){peekabooClose()}, true);
-
-function peekabooOpen(){
-
-    document.getElementById('peekaboo').style.width="80vw";
-
-    document.getElementById('peekabooInstagram').style.clear="none";
-    document.getElementById('peekabooTumblr').style.clear="none";
-
-    document.getElementById('peekabooInstagram').style.width="100px";
-    document.getElementById('peekabooTumblr').style.width="100px";
-
-    document.getElementById('peekabooInstagram').style.marginRight="30px";
-        document.getElementById('peekabooTumblr').style.marginRight="30px";
-
-    document.getElementById('peekabooInstagramLink').style.pointerEvents="auto";
-    document.getElementById('peekabooTumblrLink').style.pointerEvents="auto";
-
-    document.getElementById('peekabooText').style.opacity="1";
-    document.getElementById('peekabooCloseArrow').style.display="block";
-  }
-
-
-  function peekabooClose() {
-    document.getElementById('peekaboo').style.width= null;
-
-    document.getElementById('peekabooInstagram').style.clear= null;
-    document.getElementById('peekabooTumblr').style.clear= null;
-
-    document.getElementById('peekabooInstagramLink').style.pointerEvents= null;
-    document.getElementById('peekabooTumblrLink').style.pointerEvents= null;
-
-    document.getElementById('peekabooInstagram').style.width=null;
-    document.getElementById('peekabooTumblr').style.width=null;
-
-    document.getElementById('peekabooInstagram').style.marginRight=null;
-    document.getElementById('peekabooTumblr').style.marginRight=null;
-    document.getElementById('peekabooText').style.opacity=null;
-    document.getElementById('peekabooText').style.transitionDelay=null;
-    document.getElementById('peekabooCloseArrow').style.display=null;
-  }
-
-  // SLIDESHOW
-  var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 8000); // Change image every 2 seconds
-}
-
 // horizontal scroller BASE
 
 function jumpScroll() {
@@ -114,46 +62,6 @@ function jumpScrollBack() {
   document.getElementById('leftArrowCommisionGallery').style.opacity="0";
  };
 
- // Horizontal scroll Fanart on index
-
- function jumpScroll2() {
-
-     document.getElementById('commisionGalleryWrapperBig2').scrollBy({
-       left: 900,
-       top: 0,
-       behavior: 'smooth'
-     });
-     document.getElementById('leftArrowCommisionGallery2').style.opacity="1";
- };
-
- function jumpScrollBack2() {
-   document.getElementById('commisionGalleryWrapperBig2').scroll(0,0);
-   document.getElementById('leftArrowCommisionGallery2').style.opacity="0";
-  };
-
-
-  // Sticky thingy in commisions PAGE
-
-  // When the user scrolls the page, execute myFunction
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function noteBoxSticky(){
-  // Get the navbar
-  var noteBox = document.getElementById("noteBox");
-
-  // Get the offset position of the navbar
-  var sticky = noteBox.offsetTop;
-
-  if (window.pageYOffset >= sticky) {
-    noteBox.classList.add("sticky");
-
-  } else if(window.pageYOddset <= 0.100) {
-    noteBox.classList.remove("sticky");
-  }else {
-    noteBox.classList.remove("sticky");
-
-  }
-}
 
 var box1 = document.getElementById('imageBoxFratricide1');
 var box2 = document.getElementById('imageBoxFratricide2');
@@ -211,7 +119,6 @@ function showBox1() {
 }
 
 document.getElementById('frat').addEventListener("click", function(){openLightBox()}, true);
-document.getElementById('websiteLB').addEventListener("click", function(){openWebsiteLightBox()}, true);
 
 function openLightBox() {
   var lightBox = document.getElementById('fratricideLightBox');
@@ -255,47 +162,11 @@ function closeWebsiteLightBox() {
 
 }
 
-/* HERE COMES THE JSCRIPT FOR THE ANIMATION CAROUSEL */
+function commisionInformationBox() {
+  var alertBox = document.getElementById('commisionInformationBox');
+  var mainOverlay = document.getElementById('mainOverlayCommisions');
 
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("animationImg");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i <= 1; i < x.length; i++) {
-    x[i].style.opacity="1";
-     x[i].style.zIndex = "2";
-     x[i].style.left="20%";
-     x[i].style.width="100%";
-     x[i].style.top="10%";
-  }
-  x[slideIndex-1].style.zIndex = "1";
-  x[slideIndex-1].style.opacity="0.2";
-  x[slideIndex-1].style.left="40%";
-  x[slideIndex-1].style.width="50%";
-  x[slideIndex-1].style.top="20%";
-
-  x[slideIndex+2].style.zIndex = "1";
-  x[slideIndex+2].style.opacity="0.2";
-  x[slideIndex+2].style.left="10%";
-  x[slideIndex+2].style.width="50%";
-  x[slideIndex+2].style.top="20%";
-
-  x[slideIndex+3].style.zIndex = "0";
-  x[slideIndex+3].style.opacity="0.1";
-  x[slideIndex+3].style.left="20%";
-  x[slideIndex+3].style.width="30%";
-  x[slideIndex+3].style.top="30%";
+  mainOverlay.style.zIndex="-5";
+  mainOverlay.style.opacity="0";
+  alertBox.style.top="110vh";
 }
