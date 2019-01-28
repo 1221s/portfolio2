@@ -240,7 +240,7 @@ overflow:visible;
   z-index:21;
 
 
-    transition-duration:2s;
+  transition-duration:2s;
 }
 .loaderGif {
   display:none;
@@ -342,8 +342,8 @@ overflow:visible;
 }
 
 .bigSliderWrapper {
-  margin-top:170px;
-  position:inherit;
+  margin-top:250px;
+  position:relative;
   display:block;
 }
 
@@ -1092,10 +1092,12 @@ border-radius:10px;
   margin-bottom:30vh;
 }
 
+/* The alert box */
+
 #commisionInformationBox {
   position:fixed;
   width:60vw;
-  top:70vh;
+  top:110vh;
   left: 20vw;
   padding:5vw;
   padding-bottom:1vh;
@@ -1123,6 +1125,8 @@ border-radius:10px;
   margin-left:48%;
   margin-top:2vh;
 }
+
+/* Commisions info main content */
 
 .commisionsTypesWrapper {
   background-color: #659157;
@@ -1186,7 +1190,7 @@ border-radius:10px;
   display:block;
   position:absolute;
   left:30vw;
-  top:85vh;
+  margin-top:30px;
 
   width:40vw;
   min-height:100px;

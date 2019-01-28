@@ -1,11 +1,39 @@
 
 
-window.onload = load();
+/* window.onload = onload(){
+  console.log('it loaded this');
+  if(document.readyState === 'complete'){
+    return loaded();
+  }
+
+  else if(window.attachEvent) {
+    window.attachEvent('onload', loaded);
+  }
+
+  else if(window.addEventListener) {
+    window.addEventListener('load', loaded, false);
+  }
+};
+
+function loaded(){
+  console.log('The page is loaded');
+}
+
+function loading() {
+  console.log('I am waiting for the page to load');
+}
+
+window.addEventListener("load", onload() {
+    console.log("All resources finished loading!");
+  }); */
+
 
 // LOADING screen
-function load() {
-  var loadingtime;
-  loadingtime = setTimeout(loadPage(), 5000);
+window.onload = load();
+
+
+ function load() {
+  setTimeout(loadPage(), 10000);
 }
 
 function loadPage(){
@@ -16,8 +44,9 @@ function loadPage(){
   document.getElementById('commisionInformationBox').addEventListener("click", function(){commisionInformationBox()}, true);
   console.log('hi loadpage');
 
-  if(document.getElementById('commisionInfoWrapper').style.top="-20px"){
+  if(document.getElementById('commisionInformationBox').style.top="110vh"){
     document.getElementById('mainOverlayBurger').style.display="block"
+    document.getElementById('commisionInformationBox').style.top="70vh";
   } else {
     document.getElementById('mainOverlayBurger').style.display="none"
   }
