@@ -1,13 +1,12 @@
 
 * {
   box-sizing: border-box;
-  color:white;
-  color:#ffffff;
   text-decoration:none;
   box-shadow:none;
   border:none;
   font-size:15px;
   margin:0;
+  color:white;
   padding:0;
   overflow:hidden;
 }
@@ -32,8 +31,11 @@ h3 {
   color:#558157;
 }
 p {
-
+  color: white;
   font-family:'Questrial', sans-serif;
+}
+i {
+  color:white;
 }
 
 a p, a i{
@@ -917,21 +919,31 @@ border-radius:10px;
 }
 
 /* ABOUT PAGE IMAGES */
+
+
 .aboutSelfieLeft {
   position:absolute;
   width:20vw;
+  max-width:250px;
+  min-width:100px;
   height:30vh;
+  max-height: 300px;
+  min-height:200px;
   border-radius:30px;
+  margin-bottom:150px;
   top:18vh;
   z-index:2;
   float:left;
   left: 5vw;
+
+  border: 5px solid #659157;
 }
 
 .buzzwords {
   position:absolute;
   width:30vw;
   top:50vh;
+  left:5vw;
   z-index:2;
 }
 
@@ -1154,10 +1166,8 @@ border-radius:10px;
 }
 
 .commisionTypes p {
-  text-align:center;
   font-size: 2em;
   font-weight:bold;
-  margin-right:140px;
 }
 
 .commisionsInfoHeader {
@@ -1230,4 +1240,121 @@ border-radius:10px;
   margin-bottom:20px;
   float:left;
   background-color: #404040;
+}
+
+/* COMMISIONS ME PAGE CSS */
+.commisionMeBigWrapper {
+  position:relative;
+  min-height:100vh;
+  max-width:100vw;
+}
+
+/* TOS CSS */
+
+#tosWrapper {
+  position:absolute;
+  min-height:200px;
+  width:90vw;
+  left:5vw;
+  margin-top:5vh;
+  padding:30px;
+  background-color: #CECCCC;
+  border-radius: 15px;
+  border: 10px solid #515151;
+
+  transition-duration:0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+#tosWrapper h1 {
+  font-size:2.5em;
+}
+
+#tosWrapper i, #tosWrapper h2 {
+  color:#404040;
+}
+
+.tosHeader {
+  margin-bottom:30px;
+}
+.tosHeader p {
+  color:#404040;
+}
+
+#tosContent {
+  display:none;
+}
+
+.tosContent li i {
+  display:inline-block;
+  font-size:2em;
+  margin-left:10px;
+}
+
+.tosContent li h2 {
+  float:left;
+}
+
+.tosListItemContent {
+  min-height:3px;
+  min-width:90%;
+  margin-bottom:30px;
+
+  border-radius: 10px;
+  background-color: #707070;
+}
+
+.tosListItemContent span {
+  display:none;
+  margin:10px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.tosListItemContent span p {
+  color: white;
+  margin-bottom:10px;
+}
+
+.tosBottomWarning {
+  margin-top:20px;
+  text-align:center;
+}
+.tosBottomWarning p {
+  color: #404040;
+}
+
+.tosBottomWarning i {
+  display:block;
+  width:100%;
+  font-size:3em;
+}
+
+#tosArrowDown {
+  display:block;
+}
+#tosArrowUp, #processArrowUp, #editsArrowUp, #cancelArrowUp, #paymentArrowUp, #refundsArrowUp, #dueArrowUp {
+  display:none;
+}
+
+/* FORM CSS */
+
+#commision {
+  margin-top:200px;
+  width:100%;
+  height:auto;
+  max-height:1500px;
+  font-size:10px;
+  background-color:#659157;
+  z-index:-1;
+}
+
+.commisionFormHeaderWrapper {
+  padding-top:100px;
+  text-align:center;
+}
+
+.commisionMeFooter {
+  margin-top:-300px;
+
 }

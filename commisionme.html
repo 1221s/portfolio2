@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="1221s:commision" content="text/html">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Knewave|Questrial|Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -17,14 +18,9 @@
       href="favicon.png">
     <!-- REMEMBER TO INSERT META TAGS -->
 
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous" defer>
-      </script>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-    <script type="text/javascript" src="script.jscript" defer>
-    </script>
+    <scriptsrc="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.jscript" defer></script>
 
   </head>
 
@@ -66,19 +62,153 @@
                   <li id="desktopHomeLink"> <a href="index.html"><h2>Home</h2></a> </li>
                 <li> <a href="commisions.html"><h2>Commision Information</h2></a> </li>
                 <li> <a href="commisionme.html"><h2>Commision Me</h2></a> </li>
-                  <li> <a href="about.html"><h2>About Me</h2></a> </li>
+                  <li> <a href="about.html"><h2>About Me (CV)</h2></a> </li>
                 </ul>
             </div>
         </header>
 
+<!-- HERE STARTS TOS -->
     <section class="commisionMeBigWrapper">
-        
+      <section id="tosWrapper">
+            <div class="tosContentWrapper">
+              <div class="tosHeader">
+                <h1>Terms of Service</h1>
+                <p>Please read before commisioning!</p>
+              </div>
+
+              <div class="tosContent" id="tosContent">
+
+                <ul>
+                  <li>
+                    <h2>The Commission Process</h2>
+                    <i class="fas fa-angle-down" id="processArrowDown" onclick="tosProcessOpen()"></i>
+                    <i class="fas fa-angle-up" id="processArrowUp" onclick="tosProcessClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosProcess">
+                        <p>The commission process is very flexible and can be changed to fit your commision specifically.</p>
+                          <p>Typically it is broken into four parts:</p>
+                          <p>Confirmation/Sketch: I will send you various rough sketches for you to decide from. Once you are
+                          content with the sketch, I will consider your commission confirmed and I will send the paypal invoice.
+                          Once the invoice has been paid, work on the commission will start.</p>
+                          <p>Lineart: Working on lines, starting with an initial fully lined picture based on the sketch which we will work on together until you are content.</p>
+                          <p>Colors: Flats, making sure everything is the right color. In this phase stuff like tattoos and makeup will be added.</p>
+                          <p>Shading/details: Lighting and mood of the commision as well as special effects and stuff like that.</p>
+                      </span>
+                    </div>
+
+                  </li>
+                  <li>
+                    <h2>Edits/Changes</h2>
+                    <i class="fas fa-angle-down" id="editsArrowDown" onclick="tosEditsOpen()"></i>
+                    <i class="fas fa-angle-up" id="editsArrowUp" onclick="tosEditsClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosEdits">
+                        <p>If you request a major change after the confirmation (such as pose or clothing etc) - I ask that you inform me as
+                          quickly as possible, since i usually work through a phase in one sitting of max. 3 hours (I always have my email and
+                          social media accounts open during so i -will- see your message pop up)</p>
+                          <p>I may feel the need to (if the changes are extensive enough) request an additional fee to be paid before i start the change.</p></span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <h2>Cancellation of Commission</h2>
+                    <i class="fas fa-angle-down" id="cancelArrowDown" onclick="tosCancelOpen()"></i>
+                    <i class="fas fa-angle-up" id="cancelArrowUp" onclick="tosCancelClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosCancellation">
+                        <p>If you wish to cancel your commision you are free to do so at any time during the process. I as the artist will be adequately
+                          compensated for any work I may have done at the time of cancellation and will refund you for any remaining amount.</p></span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <h2>Payment</h2>
+                    <i class="fas fa-angle-down" id="paymentArrowDown" onclick="tosPaymentOpen()"></i>
+                    <i class="fas fa-angle-up" id="paymentArrowUp" onclick="tosPaymentClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosPayment">
+                        <p>I accept payment via paypal ONLY.</p>
+                        <p>I will send you an invoice with the agreed amount when I have confirmed your commision. I will not begin actual work on the commision
+                          before i have received payment.</p>
+                          <p>I do allow you to add a tip to the invoice, but this is never requested or expected of any customer.</p>
+                        </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <h2>Refunds</h2>
+                    <i class="fas fa-angle-down" id="refundsArrowDown" onclick="tosRefundsOpen()"></i>
+                    <i class="fas fa-angle-up" id="refundsArrowUp" onclick="tosRefundsClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosRefund">
+                        <p>I allow refunds under the following conditions:</p>
+                      <p>- If i have not contacted you regarding the commision within 4 months of confirmation or our last correspondence.
+                        (This does not apply to commisions of 3 characters or more)</p>
+                        <p>- If the communication between the parties cannot stay at a polite level, and I feel the need to terminate the commision.</p>
+                        <p>- If I realize an erorr or issue on my part makes me unable to finish the commision.</p>
+                        <p>All of these will trigger a refund of the amount remaining after I have been compensated for finished work. If i have sent you any progress made on the
+                          commision or otherwise in-progress pictures my terms will still be in effect as if they had been the finished commision.</p>
+                       </span>
+                    </div>
+                  </li>
+
+                  <li>
+                    <h2>Due Date</h2>
+                    <i class="fas fa-angle-down" id="dueArrowDown" onclick="tosDueOpen()"></i>
+                    <i class="fas fa-angle-up" id="dueArrowUp" onclick="tosDueClose()"></i>
+                    <div class="tosProcessContent tosListItemContent">
+                      <span id="tosDue">
+                        <p>Depending on the circumstances any commision may take me from 4 hours to 4 months to finish.</p>
+                          <p>If your commision is time sensitive please state so in your first email under the section “Other Notes” and I will inform you wether or not it
+                            is possible for me to finish within set time.</p></span>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="tosBottomWarning">
+                <i class="fas fa-angle-down" id="tosArrowDown" onclick="tosOpen()"></i>
+                <i class="fas fa-angle-up" id="tosArrowUp" onclick="tosClose()"></i>
+                <p>By commissioning me you agree to have read and accept the terms of service.</p>
+              </div>
+
+
+            </div>
+
+      </section>
+
+      <div class="mainOverlay"></div>
+
+<!-- HERE STARTS COMMISION FORM -->
+
+      <section id="commision">
+    <div class="commisionFormHeaderWrapper">
+      <h2>Commision me by filling out this form</h2>
+      <p>I will then contact you as soon as possible!</p>
+    </div>
+        <script src='//1221s.com/form/commision/scripts/jquery-1.7.2.min.js' type='text/javascript'></script>
+<script src='//1221s.com/form/commision/scripts/jquery.sim.utils.js' type='text/javascript'></script>
+<div id='sfm_container_div_commision'></div>
+<script type='text/javascript'>new sfmFormObj('sfm_container_div_commision','//1221s.com/form/commision/commision.php?',2600);</script>
+      </section>
+
+<!-- HERE STARTS THE QUEUE -->
+      <section class="commisionMeQueue">
+
+
+      </section>
+
+
+
 
     </section>
 
     <!-- bottom selfie -->
+
     <footer id="footer">
-    <section id="footerContent">
+    <section id="footerContent" class="commisionMeFooter">
     <h2>Thank you for taking a look at my portfolio!</h2>
     <p>I'm still new to webdevelopment so there might be a few bugs here and there. <br />If you find any, please shoot me a message on my email or on any of my social media.</p>
     <section id="footerIcons">
@@ -94,6 +224,8 @@
     <img src="img/selfie2.jpg" alt="" class="footerSelfie">
     </div>
     </footer>
+
+
 
   </body>
 </html>

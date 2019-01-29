@@ -42,7 +42,6 @@ function loadPage(){
 
   document.getElementById('body').style.overflow="auto";
   document.getElementById('commisionInformationBox').addEventListener("click", function(){commisionInformationBox()}, true);
-  console.log('hi loadpage');
 
   if(document.getElementById('commisionInformationBox').style.top="110vh"){
     document.getElementById('mainOverlayBurger').style.display="block"
@@ -198,4 +197,90 @@ function commisionInformationBox() {
   mainOverlay.style.zIndex="-5";
   mainOverlay.style.opacity="0";
   alertBox.style.top="110vh";
+}
+
+
+
+/* TOS DROP DOWN */
+function tosOpen() {
+  document.getElementById('tosContent').style.display="block";
+  document.getElementById('tosArrowDown').style.display="none";
+  document.getElementById('tosArrowUp').style.display="block";
+}
+function tosClose(){
+  document.getElementById('tosContent').style.display="none";
+  document.getElementById('tosArrowDown').style.display="block";
+  document.getElementById('tosArrowUp').style.display="none";
+}
+
+//PROCESS DROP DOWN
+function tosProcessOpen() {
+  document.getElementById('tosProcess').style.display="block";
+  document.getElementById('processArrowDown').style.display="none";
+  document.getElementById('processArrowUp').style.display="block";
+}
+function tosProcessClose(){
+  document.getElementById('tosProcess').style.display="none";
+  document.getElementById('processArrowDown').style.display="block";
+  document.getElementById('processArrowUp').style.display="none";
+}
+
+//EDITS DROP down
+function tosEditsOpen() {
+  document.getElementById('tosEdits').style.display="block";
+  document.getElementById('editsArrowDown').style.display="none";
+  document.getElementById('editsArrowUp').style.display="block";
+}
+function tosEditsClose(){
+  document.getElementById('tosEdits').style.display="none";
+  document.getElementById('editsArrowDown').style.display="block";
+  document.getElementById('editsArrowUp').style.display="none";
+}
+
+//CANCEL DROP down
+function tosCancelOpen() {
+  document.getElementById('tosCancellation').style.display="block";
+  document.getElementById('cancelArrowDown').style.display="none";
+  document.getElementById('cancelArrowUp').style.display="block";
+}
+function tosCancelClose(){
+  document.getElementById('tosCancellation').style.display="none";
+  document.getElementById('cancelArrowDown').style.display="block";
+  document.getElementById('cancelArrowUp').style.display="none";
+}
+
+//PAYMENT DROP down
+function tosPaymentOpen() {
+  document.getElementById('tosPayment').style.display="block";
+  document.getElementById('paymentArrowDown').style.display="none";
+  document.getElementById('paymentArrowUp').style.display="block";
+}
+function tosPaymentClose(){
+  document.getElementById('tosPayment').style.display="none";
+  document.getElementById('paymentArrowDown').style.display="block";
+  document.getElementById('paymentArrowUp').style.display="none";
+}
+
+//REFUND DROP DOWN
+function tosRefundsOpen() {
+  document.getElementById('tosRefund').style.display="block";
+  document.getElementById('refundsArrowDown').style.display="none";
+  document.getElementById('refundsArrowUp').style.display="block";
+}
+function tosRefundsClose(){
+  document.getElementById('tosRefund').style.display="none";
+  document.getElementById('refundsArrowDown').style.display="block";
+  document.getElementById('refundsArrowUp').style.display="none";
+}
+
+//DUE DROP DOWN
+function tosDueOpen() {
+  document.getElementById('tosDue').style.display="block";
+  document.getElementById('dueArrowDown').style.display="none";
+  document.getElementById('dueArrowUp').style.display="block";
+}
+function tosDueClose(){
+  document.getElementById('tosDue').style.display="none";
+  document.getElementById('dueArrowDown').style.display="block";
+  document.getElementById('dueArrowUp').style.display="none";
 }
